@@ -99,6 +99,12 @@
         padding-bottom: 48px
         padding-top: 0
 
+  &:hover
+    .banner__image-title
+      @media(min-width: 768px)
+        background-color: rgba(255,255,255,0.5)
+        color: #fff
+
   &__image-block,
   &__image,
   &__image-caption,
@@ -151,6 +157,7 @@
     margin-top: -28px
     padding: 24px
     text-align: center
+    transition: color 0.3s, background-color 0.3s
     text-transform: uppercase
 
     @media(min-width: 375px)

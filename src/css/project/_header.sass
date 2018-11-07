@@ -1,12 +1,14 @@
 .header
   background-color: #fff
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
   left: 0
   min-height: 96px
   position: fixed
   top: 0
   width: 100%
   z-index: 100
+
+  @media(min-width: 1200px)
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
 
   &.scrolled
     .header__top
@@ -15,11 +17,14 @@
         padding-bottom: 15px
 
   &__top
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
     padding-top: 30px
     padding-bottom: 30px
     padding-left: 16px
     padding-right: 16px
+    position: relative
     transition: padding 0.3s
+    z-index: 2
 
     @media(min-width: 400px)
       padding-left: 24px
@@ -32,6 +37,7 @@
       padding-right: 48px
 
     @media(min-width: 1200px)
+      box-shadow: none
       padding-top: 60px
       padding-bottom: 65px
 
