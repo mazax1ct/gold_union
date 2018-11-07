@@ -1,0 +1,41 @@
+.search-popup
+  background-color: rgba(255,255,255,0.95)
+  display: none
+  height: 100%
+  left: 0
+  position: fixed
+  padding: 24px
+  top: 0
+  width: 100%
+  z-index: 100
+
+  &.is-open
+    align-items: center
+    display: flex
+    justify-content: center
+
+  @media(min-width: 768px)
+    padding: 48px
+
+  &__close
+    background: none
+    border: none
+    cursor: pointer
+    height: 40px
+    left: auto
+    position: absolute
+    padding: 0
+    right: 12px
+    top: 12px
+    text-align: center
+    width: 40px
+    z-index: 1
+
+    @media(min-width: 768px)
+      height: 48px
+      width: 48px
+
+  &__close-icon
+    fill: #333736
+    height: 24px
+    width: 24px

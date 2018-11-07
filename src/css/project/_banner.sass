@@ -1,0 +1,214 @@
+.banners
+  @media(min-width: 960px)
+    align-items: flex-start
+    display: flex
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    position: relative
+    z-index: 2
+
+.banner
+  display: block
+  margin-bottom: 90px
+  text-decoration: none
+
+  @media(min-width: 1600px)
+    margin-bottom: 240px
+
+  &--right
+    &:first-child
+      @media(min-width: 960px)
+        margin-top: -12vw
+
+      @media(min-width: 1600px)
+        margin-top: -400px
+
+    @media(min-width: 960px)
+      margin-top: -14vw
+      width: 41.6666%
+
+    @media(min-width: 1600px)
+      margin-top: -400px
+
+    .banner__image
+      @media(min-width: 960px)
+        padding-bottom: 140%
+
+    .banner__image-caption
+      @media(min-width: 768px)
+        text-align: right
+
+    .banner__image-title
+      @media(min-width: 768px)
+        left: auto
+        right: 0
+
+    .banner__title-block
+      @media(min-width: 768px)
+        text-align: right
+
+  &--left
+    display: flex
+    flex-direction: column
+
+    @media(min-width: 960px)
+      margin-right: 8.33333%
+      margin-bottom: 12vw
+      width: 50%
+
+    @media(min-width: 1600px)
+      margin-bottom: 240px
+
+    .banner__image-block
+      @media(min-width: 960px)
+        order: 2
+
+    .banner__image
+      @media(min-width: 960px)
+        padding-bottom: 116%
+
+    .banner__image-caption
+      @media(min-width: 768px)
+        text-align: left
+
+      @media(min-width: 960px)
+        bottom: -2em
+        text-align: right
+        top: auto
+
+    .banner__image-title
+      @media(min-width: 768px)
+        left: 0
+        margin-top: 0
+
+      @media(min-width: 960px)
+        bottom: auto
+        top: 0
+
+    .banner__title-block
+      @media(min-width: 768px)
+        text-align: left
+
+      @media(min-width: 768px) and (max-width: 1199px)
+        padding-bottom: 24px
+
+      @media(min-width: 960px)
+        order: 1
+
+      @media(min-width: 1200px)
+        padding-bottom: 48px
+        padding-top: 0
+
+  &__image-block,
+  &__image,
+  &__image-caption,
+  &__image-title,
+  &__title-block,
+  &__title,
+  &__to_catalog
+    display: block
+
+  &__image-block
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    position: relative
+
+  &__image
+    align-items: center
+    background-size: cover
+    background-position: 0 0
+    padding-bottom: 114.16666%
+
+  &__image-caption
+    color: #353535
+    font-size: 12px
+    left: 0
+    line-height: 1.5
+    position: absolute
+    padding-left: 24px
+    padding-right: 24px
+    top: -2em
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      font-size: 16px
+      padding-left: 48px
+      padding-right: 48px
+
+    @media(min-width: 960px)
+      padding-left: 12px
+      padding-right: 12px
+
+  &__image-title
+    background-color: #fff
+    color: #171619
+    font-family: "Constancia", serif
+    font-size: 27px
+    margin-left: 36px
+    margin-right: 36px
+    margin-top: -28px
+    padding: 24px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 375px)
+      padding-left: 48px
+      padding-right: 48px
+
+    @media(min-width: 768px)
+      bottom: 0
+      margin-left: auto
+      margin-right: auto
+      position: absolute
+      top: auto
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      padding-left: 24px
+      padding-right: 24px
+
+    @media(min-width: 1600px)
+      padding: 40px 60px
+
+  &__title-block
+    margin-left: 36px
+    margin-right: 36px
+    text-align: center
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+      padding-top: 48px
+      padding-left: 48px
+      padding-right: 48px
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      padding-left: 24px
+      padding-right: 24px
+      padding-top: 24px
+
+    @media(min-width: 1600px)
+      padding-top: 60px
+      padding-left: 60px
+      padding-right: 60px
+
+  &__title
+    color: #171619
+    font-size: 15px
+    line-height: 20px
+    margin-bottom: 20px
+
+  &__to_catalog
+    color: #343835
+    font-size: 14px
+    font-weight: 900
+    letter-spacing: 1.5px
+    margin-bottom: 0
+    text-transform: uppercase
+
+  &__icon
+    fill: #343835
+    height: 11px
+    margin-left: 5px
+    width: 11px

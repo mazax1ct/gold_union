@@ -1,0 +1,179 @@
+.main-banner
+  display: block
+  max-width: 1920px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 80px
+  text-decoration: none
+
+  @media(min-width: 960px)
+    display: flex
+    margin-bottom: 6vw
+    position: relative
+    z-index: 1
+
+  @media(min-width: 1600px)
+    margin-bottom: 240px
+
+  &__image
+    position: relative
+
+    @media(min-width: 960px)
+      width: 50%
+      z-index: 1
+
+  &__image-caption
+    font-size: 12px
+    line-height: 27px
+    left: auto
+    position: absolute
+    right: 0
+    transform-origin: 100% 100% 0
+    transform: rotate(-90deg)
+    top: 0
+    z-index: 1
+
+    @media(min-width: 768px)
+      bottom: -1.59em
+      font-size: 17px
+      padding-left: 48px
+      padding-right: 48px
+      top: auto
+      text-align: center
+      transform: none
+      width: 37.5%
+
+    @media(min-width: 960px)
+      left: 0
+      padding-left: 12px
+      padding-right: 12px
+      right: auto
+      text-align: right
+      width: 100%
+
+    &--light
+      color: #fff
+
+      @media (min-width: 768px)
+        color: #353535
+
+  &__title
+    &::after,
+    &:before
+      content: attr(data-text)
+      display: none
+      font-family: serif
+      font-size: calc( 12vw + 10px )
+      font-weight: 700
+      line-height: 0.8
+      left: 38.85%
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      text-transform: uppercase
+      white-space: pre-line
+
+      @media(min-width: 960px)
+        display: block
+
+      @media(min-width: 1600px)
+        font-size: 200px
+
+    &::after
+      color: #fff
+      opacity: 0.2
+      z-index: 2
+
+    &::before
+      color: #f3f3f3
+      z-index: 0
+
+  &__text-block
+    background-color: #fff
+    color: #343835
+    margin-top: -48px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 12px
+    padding-right: 12px
+    padding-top: 48px
+    position: relative
+    text-align: center
+    width: 75%
+    z-index: 1
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+      margin-top: -192px
+      padding-top: 80px
+      padding-right: 48px
+      padding-left: 48px
+      text-align: left
+      width: 62.5%
+
+    @media(min-width: 960px)
+      background: none
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin: 0
+      overflow: hidden
+      position: relative
+      padding-top: 0
+      padding-left: 6.25%
+      padding-right: 6.25%
+      width: 50%
+      z-index: 2
+
+    @media(min-width: 1600px)
+      padding-left: 12.5%
+      padding-right: 12.5%
+
+  &__text-1
+    font-size: 15px
+    font-weight: 700
+    margin-bottom: 0
+
+  &__text-2
+    font-family: "Constantia", serif
+    font-size: 32px
+    line-height: 1.1538
+    margin-bottom: 20px
+    text-transform: uppercase
+
+    @media(min-width: 320px)
+      font-size: calc( 7vw + 10px )
+      margin-top: 0.62em
+      margin-bottom: 0.62em
+
+    @media (min-width: 960px)
+      font-size: calc( 5vw + 10px )
+
+    @media (min-width: 1200px)
+      font-size: calc( 5vw )
+
+    @media (min-width: 1600px)
+      font-size: 72px
+      line-height: 1.1111
+
+  &__text-3
+    font-size: 15px
+    margin-bottom: 0
+
+  &__text-4
+    display: none
+    font-size: 14px
+    font-weight: 900
+    margin-bottom: 0
+    margin-top: 5.7em
+    text-transform: uppercase
+
+    @media(min-width: 960px)
+      display: block
+
+  &__icon
+    fill: #343835
+    height: 11px
+    margin-left: 5px
+    width: 11px
