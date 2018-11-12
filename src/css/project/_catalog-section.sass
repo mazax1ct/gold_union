@@ -1,0 +1,127 @@
+.catalog-section
+  align-items: flex-start
+  display: flex
+  flex-wrap: wrap
+
+  &__subgrid
+    width: 100%
+
+    @media(min-width: 480px)
+      align-items: flex-start
+      display: flex
+      flex-wrap: wrap
+
+    @media(min-width: 768px)
+      width: 50%
+
+.product
+  box-shadow: 0px 0px 1px 0px rgba(210,210,210,1)
+  display: block
+  position: relative
+  padding-bottom: 100%
+  text-decoration: none
+  transition: opacity 0.3s
+  width: 100%
+
+  &:first-child
+    margin-top: 0
+
+  &:hover
+    opacity: 0.5
+
+  &--big
+    @media(min-width: 768px)
+      padding-bottom: 50%
+      width: 50%
+
+  &--small
+    @media(min-width: 480px)
+      padding-bottom: 50%
+      width: 50%
+
+    .product__inner
+      @media(min-width: 768px) and (max-width: 1199px)
+        padding: 12px
+
+      @media(min-width: 1200px)
+        padding: 24px
+
+  &--clear
+    clear: left
+
+  &--big_right
+    @media(min-width: 768px)
+      float: right
+
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    height: 100%
+    left: 0
+    padding: 24px
+    position: absolute
+    top: 0
+    width: 100%
+
+    @media(min-width: 1200px)
+      padding: 48px
+
+    @media(min-width: 1600px)
+      padding: 60px
+
+  &__image,
+  &__text-block,
+  &__title,
+  &__price
+    display: block
+
+  &__image
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: auto 100%
+    flex-grow: 1
+    max-height: 540px
+    max-width: 540px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    width: 100%
+
+    img
+      height: 100%
+
+  &__title-block
+    display: flex
+    font-size: 12px
+    justify-content: space-between
+    width: 100%
+
+    @media(min-width: 1600px)
+      font-size: 12px
+
+  &__brand
+    font-family: "Constantia", serif
+    font-size: 17px
+    margin-bottom: 15px
+
+    @media(min-width: 1600px)
+      font-size: 23px
+
+  &__brand,
+  &__title
+    color: #343835
+
+  &__title
+    margin-right: 15px
+
+  &__price
+    color: #d09b2b
+
+
+$i: 12
+@while $i > 0
+  .order-#{$i}
+    @media(max-width: 767px)
+      order: $i
+  $i: $i - 1
