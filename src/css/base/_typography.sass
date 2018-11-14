@@ -1,11 +1,14 @@
 body
-  color: #676767
+  color: #343835
   font-family: "Raleway", sans-serif
   line-height: 1.388
 
 a
   color: #d09b2b
   transition: color 0.3s
+
+b
+  font-weight: 700
 
 h1,.h1,
 h2,.h2,
@@ -20,10 +23,39 @@ h6,.h6
   font-family: "Constantia", serif
   font-size: 30px
   font-weight: 400
-  margin-bottom: 1.8em
+  margin-bottom: 48px
 
   @media(min-width: 1200px)
     font-size: 44px
+    margin-bottom: 96px
+
+  & + .search-title
+    margin-top: -48px
+
+    @media(min-width: 1200px)
+      margin-top: -96px
+
+.page-title2
+  color: #676767
+  font-size: 20px
+  font-weight: 900
+  line-height: 26px
+  letter-spacing: 2px
+  margin-bottom: 40px
+  text-align: center
+  text-transform: uppercase
+
+  @media(min-width: 768px)
+    font-size: 23px
+    margin-bottom: 95px
+
+.search-title
+  color: #bababa
+  font-size: 17px
+  margin-bottom: 48px
+
+  @media(min-width: 1200px)
+    margin-bottom: 96px
 
 h1,.h1,
 h2,.h2,

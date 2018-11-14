@@ -1,0 +1,76 @@
+.products-slider
+  padding-left: 1px
+  padding-right: 1px
+
+  &__item
+    padding-top: 1px
+    padding-bottom: 1px
+
+.product2
+  box-shadow: 0px 0px 1px 0px rgba(210,210,210,1)
+  display: block
+  position: relative
+  padding-bottom: 100%
+  text-decoration: none
+  width: 100%
+
+  &:hover
+    .product2__inner
+      opacity: 0.5
+
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    height: 100%
+    left: 0
+    padding: 24px
+    position: absolute
+    transition: opacity 0.3s
+    top: 0
+    width: 100%
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      padding: 12px
+
+    @media(min-width: 1400px)
+      padding: 30px
+
+  &__image,
+  &__title,
+  &__price
+    display: block
+
+  &__image
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: auto 100%
+    flex-grow: 1
+    max-height: 540px
+    max-width: 540px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 20px
+    text-align: center
+    width: 100%
+
+    @media(min-width: 1600px)
+      margin-bottom: 40px
+
+    img
+      height: 100%
+
+  &__title
+    color: #343835
+    text-align: center
+
+  &__price
+    color: #d09b2b
+    text-align: center
+
+  &__title,
+  &__price
+    font-size: 12px
+
+    @media(min-width: 1600px)
+      font-size: 15px

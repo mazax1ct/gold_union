@@ -1,0 +1,252 @@
+.filter
+  margin-bottom: 24px
+
+  @media(min-width: 1200px)
+    margin-bottom: 50px
+
+  &__opener
+    border: 1px solid #343835
+    background-color: #fff
+    cursor: pointer
+    display: block
+    font-family: 'Raleway', sans-serif
+    font-size: 13px
+    font-weight: 700
+    height: 60px
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+
+    @media(min-width: 960px)
+      display: none
+
+  &__inner
+    display: none
+    padding-top: 15px
+
+    @media(min-width: 960px)
+      display: flex
+      flex-wrap: wrap
+      position: relative
+      padding-top: 0
+
+    &.is-open
+      @media(max-width: 959px)
+        display: block
+
+  &__section
+    @media(min-width: 960px)
+      margin-right: 15px
+
+    @media(min-width: 1200px)
+      margin-right: 40px
+
+    &--sort
+      @media(min-width: 960px)
+        margin-left: auto
+        margin-right: 0
+
+      @media(min-width: 1200px)
+        margin-right: 0
+
+      .filter__dropdown
+        @media(min-width: 960px)
+          text-align: right
+
+      .filter__dropdown-inner
+        display: block
+
+  &__title
+    margin-bottom: 0
+    padding-top: 5px
+    padding-bottom: 5px
+
+    @media(min-width: 960px)
+      padding-top: 0
+      padding-bottom: 0
+
+  &__section-opener
+    border: 1px solid transparent
+    cursor: pointer
+    display: inline-block
+    font-size: 14px
+    letter-spacing: 2px
+    padding: 4px 10px 5px 30px
+    position: relative
+    text-transform: uppercase
+    transition: color 0.3s
+    vertical-align: top
+
+    &:hover,
+    &.is-open
+      color: #c8962c
+
+      .filter__section-opener-icon
+        fill: #c8962c
+
+    &.checked
+      border-color: #343835
+
+  &__section-opener-icon
+    fill: #b8b8b8
+    height: 11px
+    left: 9px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    transition: fill 0.3s
+    width: 11px
+
+  &__dropdown
+    background-color: #f3f3f3
+    display: none
+    padding: 20px 10px
+
+    @media(min-width: 960px)
+      left: 0
+      padding-top: 50px
+      padding-bottom: 50px
+      position: absolute
+      top: 50px
+      width: 100%
+      z-index: 1
+
+    &.is-open
+      display: block
+
+      &::before
+        @media(min-width: 960px)
+          background-color: #f3f3f3
+          content: ""
+          height: 100%
+          left: 50%
+          position: absolute
+          transform: translateX(-50%)
+          top: 0
+          width: 4000px
+
+  &__dropdown-inner
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      position: relative
+
+  &__dropdown-section
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      min-width: 50%
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      min-width: 25%
+      width: 25%
+
+    @media(min-width: 1200px)
+      min-width: 240px
+      width: auto
+
+    &:last-child
+      margin-bottom: 0
+
+    &:nth-last-child(2)
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    &:nth-last-child(3)
+      @media(min-width: 960px)
+        margin-bottom: 0
+
+  &__sort-item
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__sort-link
+    color: #343835
+    display: inline-block
+    font-size: 13px
+    font-weight: 500
+    padding: 5px 0
+    text-decoration: none
+    vertical-align: top
+
+    &:hover
+      color: #c8962c
+
+    &.is-active
+      font-weight: 600
+      text-decoration: underline
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+
+    @media(min-width: 960px)
+      display: none
+
+  &__button
+    border: 1px solid #343835
+    background-color: #fff
+    cursor: pointer
+    font-family: 'Raleway', sans-serif
+    font-size: 13px
+    font-weight: 300
+    padding: 10px
+    text-transform: uppercase
+    width: 48%
+
+    &--reset
+      background-color: #f3f3f3
+      border-color: #f3f3f3
+      color: #969696
+
+  &__checked-block
+    display: none
+
+    @media(min-width: 960px)
+      display: flex
+      flex-wrap: wrap
+      margin-top: 48px
+      width: 100%
+
+  &__checked,
+  &__reset
+    border: 1px solid #f3f3f3
+    background-color: #fff
+    color: #969696
+    cursor: pointer
+    font-family: 'Raleway', sans-serif
+    font-size: 14px
+    height: 30px
+    letter-spacing: 1px
+    margin-right: 10px
+    margin-bottom: 10px
+    padding: 3px 10px
+    white-space: nowrap
+
+  &__checked
+    transition: border-color 0.3s
+
+    &:hover
+      border-color: #969696
+
+  &__reset
+    background-color: #f3f3f3
+
+  &__checked-icon
+    fill: #969696
+    height: 14px
+    margin-left: 5px
+    vertical-align: middle
+    position: relative
+    top: -3px
+    width: 14px
+
+  .checkbox-icon
+    background-color: #fff
+    border-color: #fff

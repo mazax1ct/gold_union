@@ -1,3 +1,6 @@
+.catalog-page
+  overflow-x: hidden
+
 .catalog-section
   align-items: flex-start
   display: flex
@@ -20,14 +23,11 @@
   position: relative
   padding-bottom: 100%
   text-decoration: none
-  transition: opacity 0.3s
   width: 100%
 
-  &:first-child
-    margin-top: 0
-
   &:hover
-    opacity: 0.5
+    .product__inner
+      opacity: 0.5
 
   &--big
     @media(min-width: 768px)
@@ -39,20 +39,6 @@
       padding-bottom: 50%
       width: 50%
 
-    .product__inner
-      @media(min-width: 768px) and (max-width: 1199px)
-        padding: 12px
-
-      @media(min-width: 1200px)
-        padding: 24px
-
-  &--clear
-    clear: left
-
-  &--big_right
-    @media(min-width: 768px)
-      float: right
-
   &__inner
     display: flex
     flex-direction: column
@@ -62,9 +48,13 @@
     padding: 24px
     position: absolute
     top: 0
+    transition: opacity 0.3s
     width: 100%
 
-    @media(min-width: 1200px)
+    @media(min-width: 768px) and (max-width: 1199px)
+      padding: 12px
+
+    @media(min-width: 1400px)
       padding: 48px
 
     @media(min-width: 1600px)
@@ -98,7 +88,7 @@
     width: 100%
 
     @media(min-width: 1600px)
-      font-size: 12px
+      font-size: 15px
 
   &__brand
     font-family: "Constantia", serif
@@ -117,7 +107,6 @@
 
   &__price
     color: #d09b2b
-
 
 $i: 12
 @while $i > 0

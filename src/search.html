@@ -25,12 +25,16 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Каталог</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Ювелирные украшения</a></li>
-          <li class="breadcrumbs__item">Женские украшения</li>
+          <li class="breadcrumbs__item">Поиск</li>
         </ul>
-        <h1 class="page-title">Женские украшения</h1>
-        //= template/filter.html
+        <form class="search-bar search-bar--on_page" action="/">
+          <label class="search-bar__label" for="search">
+            <input class="search-bar__input" id="search" type="text" value="Кольцо" placeholder="Поиск...">
+          </label>
+          <button class="search-bar__button" type="submit">НАЙТИ</button>
+        </form>
+        <h1 class="page-title">Результаты поиска «Кольцо»</h1>
+        <p class="search-title">Нашлось 122 результатов</p>
         <div class="catalog-section">
           <a class="product product--big order-1" href="catalog-detail.html">
             <span class="product__inner">
