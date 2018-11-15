@@ -78,6 +78,18 @@
     		<polygon points="54.5,0 53.5,1 57.9,5.5 53.5,10 54.5,11 60,5.5"/>
     	</g>
     </symbol>
+    <symbol id="pin" viewBox="0 0 20 20">
+      <path d="M16.1,3C13.4-0.4,8.5-1,5.1,1.7c-3,2.4-3.8,6.6-2,9.9c0,0.1,0.1,0.2,0.2,0.3c0.2,0.3,0.4,0.6,0.6,0.9c0.3,0.3,6.2,7.2,6.2,7.2s5.7-6.7,5.9-7c0.3-0.4,0.6-0.7,0.8-1.1l0,0c0-0.1,0.1-0.1,0.1-0.2C18.4,8.9,18.2,5.5,16.1,3z M11.7,9.6c-1.2,1-2.9,0.8-3.9-0.4C6.9,8,7.1,6.3,8.3,5.3c1.2-1,2.9-0.8,3.9,0.4C13.1,7,12.9,8.7,11.7,9.6z"/>
+    </symbol>
+    <symbol id="plus" viewBox="0 0 24 24">
+      <g>
+    		<line fill="none" stroke="#343835" stroke-width="4" stroke-miterlimit="10" x1="12" y1="0" x2="12" y2="24"/>
+    		<line fill="none" stroke="#343835" stroke-width="4" stroke-miterlimit="10" class="st0" x1="24" y1="12" x2="0" y2="12"/>
+    	</g>
+    </symbol>
+    <symbol id="minus" viewBox="0 0 24 24">
+      <line fill="none" stroke="#343835" stroke-width="4" stroke-miterlimit="10" x1="24" y1="12" x2="0" y2="12"/>
+    </symbol>
   </svg>
   <div class="wrapper">
     <header class="header">
@@ -88,7 +100,7 @@
             <a class="service-menu__link" href="about.html">О компании</a>
             <a class="service-menu__link" href="#">Бутики</a>
           </div>
-          <a class="logo" href="index.html"><img width="268" height="55" src="images/logo.svg" alt="GOLD UNION"></a>
+          <a class="logo" href="main.html"><img width="268" height="55" src="images/logo.svg" alt="GOLD UNION"></a>
           <div class="header__right">
             <a class="js-search-opener eader__search-link search-link" href="search.html" title="Поиск"><svg class="search-link__icon" aria-hidden="true"><use xlink:href="#search"/></svg></a>
             <a class="header__cart-link cart-link" href="cart.html" title="Корзина">
@@ -201,7 +213,7 @@
     <div class="page-content">
       <div class="container">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
           <li class="breadcrumbs__item">Бренды</li>
         </ul>
         <div class="brands-list">
@@ -357,7 +369,7 @@
   </footer>
   <div class="search-popup">
     <button class="js-search-closer search-popup__close" type="button" title="Закрыть"><svg class="search-popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
-    <form class="search-bar" action="/">
+    <form class="search-bar" action="/search.html">
       <label class="search-bar__label" for="search">
         <input class="search-bar__input" id="search" type="text" value="" placeholder="Поиск...">
       </label>

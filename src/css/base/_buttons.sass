@@ -1,21 +1,39 @@
 .button
-  background-color: #00c220
-  border: none
-  border-radius: 5px
-  color: #fff
+  background-color: #fff
+  border: 1px solid #343835
+  color: #343835
   cursor: pointer
   display: inline-block
-  font-family: inherit
-  font-size: inherit
+  font-family: "Raleway", sans-serif
+  font-size: 15px
+  font-weight: 700
+  height: 60px
   line-height: 18px
-  padding: 11px 14px
+  padding: 20px
   text-decoration: none
   text-align: center
+  text-transform: uppercase
+  transition: color 0.3s, background-color 0.3s
   vertical-align: middle
+
+  &--dark
+    background-color: #343835
+    color: #fff
+
+  &--gold
+    background-color: #d09b2b
+    border: 1px solid #d09b2b
+    color: #fff
+
+    &:hover,
+    &:active
+      background-color: #d09b2b
+      border: 1px solid #d09b2b
+      color: #fff
 
   &:hover,
   &:active
-    background-color: #00d123
+    background-color: #343835
     color: #fff
 
   &:focus

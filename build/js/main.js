@@ -121,4 +121,10 @@ $(document).ready(function() {
       $('.filter__dropdown[data-section='+ $(this).attr("data-section") +']').addClass("is-open");
     }
   });
+
+  //открытие/закрытие аккордиона
+  $(".js-accordion-opener").click(function() {
+    $(this).toggleClass("is-open");
+    $(this).next(".accordion__text").slideToggle();
+  });
 });
