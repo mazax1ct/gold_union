@@ -2,16 +2,46 @@
   margin-bottom: 80px
 
   @media(min-width: 960px)
+    align-items: flex-start
     display: flex
 
   @media(min-width: 1200px)
     margin-bottom: 160px
 
   &__images
+    margin-bottom: 24px
+    position: relative
+
     @media(min-width: 960px)
+      margin-bottom: 0
       min-width: 54.1666%
       padding-right: 4.1666%
       width: 54.1666%
+
+  &__main-image
+    background-color: #f3f3f3
+
+  &__thumbs
+    left: 1px
+    position: absolute
+    top: 1px
+    z-index: 1
+
+  &__thumb
+    background-color: #f3f3f3
+    display: block
+    height: 40px
+    margin-bottom: 1px
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 1200px)
+      height: 120px
+      width: 120px
+
+    &:hover,
+    &.mz-thumb-selected
+      background-color: #fff
 
   &__description
     @media(min-width: 960px)
