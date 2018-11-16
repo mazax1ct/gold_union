@@ -45,20 +45,19 @@ eval(
   )
 );
 
-var cd_height = $(".product-detail").innerHeight();
 var zoomWidth = $(".product-detail__description").width();
-//console.log(cd_height);
 
 var mzOptions = {
   zoomWidth: zoomWidth,
-  zoomHeight: auto,
+  zoomHeight: 'auto',
   zoomDistance: 5,
-  zoomOn: "hover",
+  zoomOn: 'hover',
   expandCaption: false,
-  textBtnClose: "Закрыть",
-  textBtnNext: "Следующая",
-  textBtnPrev: "Предыдущая",
-  hint: "off",
+  textBtnClose: 'Закрыть',
+  textBtnNext: 'Следующая',
+  textBtnPrev: 'Предыдущая',
+  textHoverZoomHint: 'Увеличить',
+  hint: 'always',
   smoothing: false
 };
 

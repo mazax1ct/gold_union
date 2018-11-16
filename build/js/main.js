@@ -1,5 +1,4 @@
 var hHeight = $('.header').height();
-console.log(hHeight);
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > hHeight) {
@@ -127,4 +126,28 @@ $(document).ready(function() {
     $(this).toggleClass("is-open");
     $(this).next(".accordion__text").slideToggle();
   });
+
+  //слайдер превью в деталке
+  if ($('.js-preview-slider').length) {
+    $('.js-preview-slider').slick({
+      vertical: true,
+      mobileFirst: true,
+      slidesToShow: 5,
+      infinite: false,
+      edgeFriction: 0,
+      arrows: true,
+      dots: false,
+      prevArrow: '<button type="button" class="slick-prev" title="Наверх"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#arrow_top"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вниз"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#arrow_bottom"/></svg></button>',
+      responsive: [
+        /*{
+          breakpoint: 959,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }*/
+      ]
+    });
+  }
 });

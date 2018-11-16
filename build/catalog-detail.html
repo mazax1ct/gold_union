@@ -66,6 +66,9 @@
     <symbol id="arrow_bottom" viewBox="0 0 50 50">
       <polygon points="49.5,15.1 25,39.6 0.5,15.1 5.2,10.4 25,30.2 44.8,10.4"/>
     </symbol>
+    <symbol id="arrow_top" viewBox="0 0 50 50">
+      <polygon points="0.5,34.9 25,10.4 49.5,34.9 44.8,39.6 25,19.8 5.2,39.6"/>
+    </symbol>
     <symbol id="slider_arrow_left" viewBox="0 0 60 11">
       <g>
     		<rect x="2" y="4.8" width="58" height="1.5"/>
@@ -89,6 +92,14 @@
     </symbol>
     <symbol id="minus" viewBox="0 0 24 24">
       <line fill="none" stroke="#343835" stroke-width="4" stroke-miterlimit="10" x1="24" y1="12" x2="0" y2="12"/>
+    </symbol>
+    <symbol id="zoom" viewBox="0 0 20 20">
+      <g>
+    		<path d="M9.5,1.5L9.5,1.5c2.1,0,4.1,1,5.5,2.6c1.2,1.5,1.7,3.3,1.5,5.1c-0.2,1.9-1.1,3.5-2.6,4.7c-1.3,1-2.8,1.5-4.4,1.5c-2.1,0-4.1-1-5.5-2.6c-1.2-1.5-1.7-3.3-1.5-5.1C2.7,5.9,3.7,4.2,5.1,3C6.4,2,7.9,1.5,9.5,1.5 M9.5,0C7.6,0,5.7,0.6,4.2,1.9c-3.7,2.9-4.2,8.3-1.3,11.9C4.5,15.9,7,17,9.5,17c1.9,0,3.7-0.6,5.3-1.9c3.7-2.9,4.2-8.3,1.3-11.9C14.4,1.1,12,0,9.5,0"/>
+    		<line fill="none" stroke="#b8b8b8" stroke-width="1.5" stroke-miterlimit="10" x1="9.5" y1="5.5" x2="9.5" y2="11.5"/>
+    		<line fill="none" stroke="#b8b8b8" stroke-width="1.5" stroke-miterlimit="10" x1="12.5" y1="8.5" x2="6.5" y2="8.5"/>
+    		<path d="M14.6,13.8c-0.2,0-0.4,0.1-0.6,0.2c-0.4,0.3-0.5,1-0.2,1.4l3.4,4.2c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.4-0.1,0.6-0.2c0.4-0.3,0.5-1,0.2-1.4l-3.4-4.2C15.2,13.9,14.9,13.8,14.6,13.8"/>
+    	</g>
     </symbol>
   </svg>
   <div class="wrapper">
@@ -222,11 +233,40 @@
         <div class="product-detail">
           <div class="product-detail__images">
             <a id="MagicZoom" class="product-detail__main-image MagicZoom" href="images/content/img_23.jpg"/>
-              <img src="images/content/img_22.png" alt="Кольцо Drapes - Изображение 1"/>
+              <img src="images/content/img_13_2x.jpg" alt="Кольцо Drapes - Изображение 1"/>
+              <div class="product-detail__hint"><svg class="product-detail__hint-icon" aria-hidden="true"><use xlink:href="#zoom"/></svg>Увеличить</div>
             </a>
-            <div class="product-detail__thumbs">
-              <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_23.jpg" data-image="images/content/img_22.png"><img class="js-product_gallery-preview_image" src="images/content/img_24.png" alt="Кольцо Drapes - Изображение 1"/></a>
-              <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_25.png"><img class="js-product_gallery-preview_image" src="images/content/img_26.png" alt="Кольцо Drapes - Изображение 2"/></a>
+            <div class="js-preview-slider product-detail__thumbs">
+              <div>
+                <a class="product-detail__thumb mz-thumb-selected" data-zoom-id="MagicZoom" href="images/content/img_24.jpg" data-image="images/content/img_13_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_22.jpg" alt="Кольцо Drapes - Изображение 1"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_12_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_26.jpg" alt="Кольцо Drapes - Изображение 2"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_24.jpg" data-image="images/content/img_13_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_22.jpg" alt="Кольцо Drapes - Изображение 1"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_12_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_26.jpg" alt="Кольцо Drapes - Изображение 2"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_24.jpg" data-image="images/content/img_13_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_22.jpg" alt="Кольцо Drapes - Изображение 1"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_12_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_26.jpg" alt="Кольцо Drapes - Изображение 2"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_24.jpg" data-image="images/content/img_13_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_22.jpg" alt="Кольцо Drapes - Изображение 1"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_12_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_26.jpg" alt="Кольцо Drapes - Изображение 2"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_24.jpg" data-image="images/content/img_13_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_22.jpg" alt="Кольцо Drapes - Изображение 1"/></a>
+              </div>
+              <div>
+                <a class="product-detail__thumb" data-zoom-id="MagicZoom" href="images/content/img_27.jpg" data-image="images/content/img_12_2x.jpg"><img class="js-product_gallery-preview_image" src="images/content/img_26.jpg" alt="Кольцо Drapes - Изображение 2"/></a>
+              </div>
             </div>
           </div>
           <div class="product-detail__description">
