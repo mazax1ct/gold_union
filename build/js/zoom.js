@@ -60,7 +60,3 @@ var mzOptions = {
   hint: 'always',
   smoothing: false
 };
-
-var mzMobileOptions = {
-  zoomMode: 'off'
-};

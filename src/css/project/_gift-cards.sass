@@ -1,0 +1,51 @@
+.gift-cards
+  display: flex
+
+  &__item
+    border: 1px solid transparent
+    margin-right: 30px
+    width: 100px
+
+    &:last-child
+      margin-right: 0
+
+    &.is-active
+      border: 1px solid #f3f3f3
+
+      img
+        opacity: 0.3
+
+.gift-card
+  border: 1px solid #f3f3f3
+  display: none
+  min-height: 100%
+  padding: 24px
+  text-align: center
+
+  &.is-active
+    display: block
+
+  &--type_2,
+  &--type_3
+    align-items: center
+    background-repeat: no-repeat
+    background-size: cover
+    flex-direction: column
+    justify-content: center
+    padding-top: 48px
+    padding-bottom: 48px
+
+    &.is-active
+      display: flex
+
+  &--type_3
+    color: #fff
+
+  &__image
+    margin-bottom: 24px
+
+  &__text
+    font-family: "Constantia", serif
+    font-family: 16px
+    line-height: 26px
+    text-align: center

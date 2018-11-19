@@ -283,21 +283,21 @@
             </div>
             <div class="product-detail__buttons">
               <a class="button button--dark" href="#">Купить</a>
-              <a class="button" href="#">Хотите в подарок?</a>
+              <a class="button" href="#gift" data-fancybox='form-popup'>Хотите в подарок?</a>
             </div>
             <div class="product-detail__shops-list">
               <p class="product-detail__shops-title">Бутики</p>
               <div class="shop">
                 <div class="shop__title-block">
-                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/>
+                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>
                   <p class="shop__title">Gold Union</p>
                   <p class="shop__address">Санкт-Петербург, Невский пр., 137</p>
                 </div>
-                <a class="shop__request-link" href="#">Примерить в магазине<svg class="shop__request-link-icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></a>
+                <a class="shop__request-link" href="#fit" data-fancybox='form-popup'>Примерить в магазине<svg class="shop__request-link-icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></a>
               </div>
               <div class="shop">
                 <div class="shop__title-block">
-                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/>
+                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>
                   <p class="shop__title">Gold Union</p>
                   <p class="shop__address">Санкт-Петербург, Невский пр., 137</p>
                 </div>
@@ -563,10 +563,95 @@
     </form>
   </div>
 
+  <div id="gift" class="popup">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+    <p class="popup__title">Хотите такой подарок?</p>
+    <form class="form" action="/">
+      <div class="popup__cols">
+        <div class="popup__col">
+          <label class="form__label" for="name_">
+            <span class="form__label-text">кому</span>
+            <input class="input" id="name_" type="text" name="name_" value="" placeholder="Имя">
+          </label>
+          <label class="form__label" for="email_">
+            <input class="input" id="email_" type="text" name="email_" value="" placeholder="E-mail">
+          </label>
+          <label class="form__label" for="name__">
+            <span class="form__label-text">от кого</span>
+            <input class="input" id="name__" type="text" name="name__" value="" placeholder="Телефон">
+          </label>
+          <label class="form__label" for="email__">
+            <input class="input" id="email__" type="text" name="email__" value="" placeholder="E-mail">
+          </label>
+          <p class="form__label-text">фон открытки</p>
+          <div class="gift-cards">
+            <a class="js-gift-card gift-cards__item is-active" href="#" data-id="1"><img src="images/content/img_28.jpg" alt="Фон 1"></a>
+            <a class="js-gift-card gift-cards__item" href="#" data-id="2"><img src="images/content/img_29.jpg" alt="Фон 2"></a>
+            <a class="js-gift-card gift-cards__item" href="#" data-id="3"><img src="images/content/img_30.jpg" alt="Фон 3"></a>
+          </div>
+        </div>
+        <div class="popup__col">
+          <div class="gift-card is-active" data-id="1">
+            <img class="gift-card__image" src="images/content/img_31.jpg" alt="Кольцо">
+            <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+          </div>
+          <div class="gift-card gift-card--type_2" data-id="2" style="background-image: url('../images/content/img_29.jpg')">
+            <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+          </div>
+          <div class="gift-card gift-card--type_3" data-id="3" style="background-image: url('../images/content/img_30.jpg')">
+            <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+          </div>
+        </div>
+      </div>
+      <div class="popup__button-block">
+        <button class="popup__button button button--dark" type="submit">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+  </div>
+  <div id="fit" class="popup">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+    <p class="popup__title">Примерить в магазине</p>
+    <form class="form" action="/">
+      <div class="popup__cols">
+        <div class="popup__col">
+          <label class="form__label" for="name">
+            <input class="input" id="name" type="text" name="name" value="" placeholder="Имя">
+          </label>
+          <label class="form__label" for="phone">
+            <input class="input" id="phone" type="text" name="phone" value="" placeholder="Телефон">
+          </label>
+          <label class="form__label" for="email">
+            <input class="input" id="email" type="text" name="email" value="" placeholder="E-mail">
+          </label>
+          <label class="form__label" for="comment">
+            <textarea class="textarea" id="comment" name="comment" placeholder="Комментарий (Предпочитаемая дата, время визита и другие подробности)"></textarea>
+          </label>
+        </div>
+        <div class="popup__col">
+          <div class="shop-info">
+            <p class="shop-info__title"><svg class="shop-info__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>Gold Union</p>
+            <p class="shop-info__subtitle">Телефон</p>
+            <p class="shop-info__data"><a href="tel:+78123323262">+7 (812) 332 32 62</a></p>
+            <p class="shop-info__subtitle">e-mail</p>
+            <p class="shop-info__data"><a href="mailto:monza@goldunion.spb.ru">monza@goldunion.spb.ru</a></p>
+            <p class="shop-info__subtitle">Адрес</p>
+            <p class="shop-info__data">Санкт-Петербург, ул. Михайловская, 4</p>
+            <p class="shop-info__subtitle">время работы</p>
+            <p class="shop-info__data">Ежедневно с 11.00 до 21.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="popup__button-block">
+        <button class="popup__button button button--dark" type="submit">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+  </div>
+
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/zoom.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

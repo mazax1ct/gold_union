@@ -1,3 +1,4 @@
+//уменьшение шапки при скролле
 var hHeight = $('.header').height();
 
 $(window).scroll(function () {
@@ -23,11 +24,23 @@ $(document).ready(function() {
     return false;
   });
 
-  //открытие/закрытие попапа поиска
+  //открытие/закрытие главного меню
   $(".js-menu-opener").click(function() {
     $(this).toggleClass("is-active");
     $(".main-menu").toggleClass("is-open");
     $("body").toggleClass("overflow");
+  });
+
+  //переход ко второму уровню меню на мобильных
+  $(".main-menu__link--pseudo").click(function() {
+    $(".main-menu__link").addClass("hidden");
+    $(this).next(".sub-menu").addClass("is-open");
+  });
+
+  //переход к первому уровню меню на мобильных
+  $(".sub-menu__link--pseudo").click(function() {
+    $(".main-menu__link:not(.main-menu__link--root)").removeClass("hidden");
+    $(".sub-menu").removeClass("is-open");
   });
 
   //слайдер новостей
@@ -50,18 +63,6 @@ $(document).ready(function() {
       ]
     });
   }
-
-  //переход ко второму уровню меню на мобильных
-  $(".main-menu__link--pseudo").click(function() {
-    $(".main-menu__link").addClass("hidden");
-    $(this).next(".sub-menu").addClass("is-open");
-  });
-
-  //переход к первому уровню меню на мобильных
-  $(".sub-menu__link--pseudo").click(function() {
-    $(".main-menu__link:not(.main-menu__link--root)").removeClass("hidden");
-    $(".sub-menu").removeClass("is-open");
-  });
 
   //слайдер товаров
   if ($('.js-products-slider').length) {
@@ -137,17 +138,75 @@ $(document).ready(function() {
       edgeFriction: 0,
       arrows: true,
       dots: false,
-      prevArrow: '<button type="button" class="slick-prev" title="Наверх"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#arrow_top"/></svg></button>',
-      nextArrow: '<button type="button" class="slick-next" title="Вниз"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#arrow_bottom"/></svg></button>',
+      prevArrow: '<button type="button" class="slick-prev" title="Наверх"></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вниз"></button>',
       responsive: [
-        /*{
+        {
+          breakpoint: 399,
+          settings: {
+            slidesToShow: 7
+          }
+        },
+        {
           breakpoint: 959,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 5
           }
-        }*/
+        },
+        {
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 1599,
+          settings: {
+            slidesToShow: 5
+          }
+        },
       ]
     });
   }
+
+  //открытие попапа
+  $("[data-fancybox='form-popup']").fancybox({
+    touch: false,
+    infobar: false,
+    toolbar: false,
+    smallBtn: false,
+    buttons: ["close"],
+    animationEffect: false,
+    arrows: false
+	});
+
+  //закрытие попапа
+  $('.js-popup-close').on('click', function() {
+  	$.fancybox.close();
+  	return false;
+  });
+
+  //смена фона открытки
+  $(".js-gift-card").click(function() {
+    $(".js-gift-card").removeClass("is-active");
+    $(this).toggleClass("is-active");
+    $(".gift-card").removeClass("is-active");
+    $('.gift-card[data-id='+ $(this).attr("data-id") +']').addClass("is-active");
+    return false;
+  });
+
+  //пишем имена отправителя и получателя
+  $("#name_").on("change", function() {
+    $(".reciever").html($(this).val());
+    if($(this).val() == 0){
+      $(".reciever").html("______");
+    }
+  });
+
+  $("#name__").on("change", function() {
+    $(".sender").html($(this).val());
+    if($(this).val() == 0){
+      $(".sender").html("______");
+    }
+  });
 });

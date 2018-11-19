@@ -83,21 +83,21 @@
             </div>
             <div class="product-detail__buttons">
               <a class="button button--dark" href="#">Купить</a>
-              <a class="button" href="#">Хотите в подарок?</a>
+              <a class="button" href="#gift" data-fancybox='form-popup'>Хотите в подарок?</a>
             </div>
             <div class="product-detail__shops-list">
               <p class="product-detail__shops-title">Бутики</p>
               <div class="shop">
                 <div class="shop__title-block">
-                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/>
+                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>
                   <p class="shop__title">Gold Union</p>
                   <p class="shop__address">Санкт-Петербург, Невский пр., 137</p>
                 </div>
-                <a class="shop__request-link" href="#">Примерить в магазине<svg class="shop__request-link-icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></a>
+                <a class="shop__request-link" href="#fit" data-fancybox='form-popup'>Примерить в магазине<svg class="shop__request-link-icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></a>
               </div>
               <div class="shop">
                 <div class="shop__title-block">
-                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/>
+                  <svg class="shop__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>
                   <p class="shop__title">Gold Union</p>
                   <p class="shop__address">Санкт-Петербург, Невский пр., 137</p>
                 </div>
@@ -166,8 +166,12 @@
   //= template/footer.html
   //= template/search-popup.html
 
+  //= template/gift-popup.html
+  //= template/fit-popup.html
+
   //= template/scripts.html
   <script type="text/javascript" src="js/zoom.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+<div id="gift" class="popup">
+  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+  <p class="popup__title">Хотите такой подарок?</p>
+  <form class="form" action="/">
+    <div class="popup__cols">
+      <div class="popup__col">
+        <label class="form__label" for="name_">
+          <span class="form__label-text">кому</span>
+          <input class="input" id="name_" type="text" name="name_" value="" placeholder="Имя">
+        </label>
+        <label class="form__label" for="email_">
+          <input class="input" id="email_" type="text" name="email_" value="" placeholder="E-mail">
+        </label>
+        <label class="form__label" for="name__">
+          <span class="form__label-text">от кого</span>
+          <input class="input" id="name__" type="text" name="name__" value="" placeholder="Телефон">
+        </label>
+        <label class="form__label" for="email__">
+          <input class="input" id="email__" type="text" name="email__" value="" placeholder="E-mail">
+        </label>
+        <p class="form__label-text">фон открытки</p>
+        <div class="gift-cards">
+          <a class="js-gift-card gift-cards__item is-active" href="#" data-id="1"><img src="images/content/img_28.jpg" alt="Фон 1"></a>
+          <a class="js-gift-card gift-cards__item" href="#" data-id="2"><img src="images/content/img_29.jpg" alt="Фон 2"></a>
+          <a class="js-gift-card gift-cards__item" href="#" data-id="3"><img src="images/content/img_30.jpg" alt="Фон 3"></a>
+        </div>
+      </div>
+      <div class="popup__col">
+        <div class="gift-card is-active" data-id="1">
+          <img class="gift-card__image" src="images/content/img_31.jpg" alt="Кольцо">
+          <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+        </div>
+        <div class="gift-card gift-card--type_2" data-id="2" style="background-image: url('../images/content/img_29.jpg')">
+          <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+        </div>
+        <div class="gift-card gift-card--type_3" data-id="3" style="background-image: url('../images/content/img_30.jpg')">
+          <p class="gift-card__text">Здравствуйте, <span class="sender">______</span>!<br> Мы узнали о том, что <span class="reciever">______</span><br> мечтает о таком подарке из Gold Union,<br> и решили вам намекнуть об этом.</p>
+        </div>
+      </div>
+    </div>
+    <div class="popup__button-block">
+      <button class="popup__button button button--dark" type="submit">ОТПРАВИТЬ</button>
+    </div>
+  </form>
+</div>
