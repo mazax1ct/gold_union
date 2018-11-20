@@ -1,16 +1,32 @@
 .news-title
-  font-size: 24px
+  color: #676767
+  font-size: 20px
   font-weight: 900
-  line-height: 26px
+  line-height: 1
+  letter-spacing: 2px
   margin-bottom: 48px
+  margin-top: 96px
   text-align: center
   text-transform: uppercase
 
   @media(min-width: 768px)
+    font-size: 23px
+
+  @media(min-width: 960px)
+    margin-bottom: 76px
+    margin-top: 144px
+
+  @media(min-width: 1200px)
     font-size: 27px
+    margin-bottom: 100px
+    margin-top: 180px
 
 .news-slider
-  @media(min-width: 960px)
+  @media(min-width: 768px)
+    margin-left: -24px
+    margin-right: -24px
+
+  @media(min-width: 1200px)
     margin-left: -48px
     margin-right: -48px
 
@@ -19,70 +35,15 @@
     margin-right: -58px
 
   .news
-    @media(min-width: 960px)
+    margin-bottom: 0
+    text-align: center
+
+    @media(min-width: 768px)
       max-width: 720px
-      padding-left: 30px
-      padding-right: 30px
-
-.news
-  color: #171619
-  display: block
-  max-width: 660px
-  margin-left: auto
-  margin-right: auto
-  text-decoration: none
-
-  &__image
-    display: block
-    margin-bottom: 25px
-    position: relative
-
-    @media(min-width: 1600px)
-      margin-bottom: 40px
-
-  &__date
-    align-items: center
-    background-color: #fff
-    bottom: 0
-    display: flex
-    font-family: "Constantia", serif
-    font-family: 14px
-    justify-content: center
-    height: 48px
-    left: 50%
-    position: absolute
-    top: auto
-    transform: translateX(-50%)
-    text-align: center
-    width: 192px
-
-    @media(min-width: 768px)
-      bottom: auto
-      font-size: 17px
-      left: 0
-      transform: none
-      top: 0
-
-  &__title
-    display: block
-    font-family: "Constantia", serif
-    font-size: 27px
-    line-height: 37px
-    margin-bottom: 0.5em
-    text-align: center
-
-    @media(min-width: 768px)
-      text-align: left
-
-  &__preview-text
-    display: block
-    font-size: 15px
-    line-height: 20px
-    text-align: center
-
-    @media(min-width: 768px)
+      padding-left: 24px
+      padding-right: 24px
       text-align: left
 
     @media(min-width: 1200px)
-      font-size: 17px
-      line-height: 26px
+      padding-left: 30px
+      padding-right: 30px

@@ -1,6 +1,5 @@
 //уменьшение шапки при скролле
 var hHeight = $('.header').height();
-
 $(window).scroll(function () {
   if ($(this).scrollTop() > hHeight) {
     $('.header').addClass('scrolled');
@@ -54,7 +53,7 @@ $(document).ready(function() {
       dots: true,
       responsive: [
         {
-          breakpoint: 959,
+          breakpoint: 767,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2
@@ -170,15 +169,17 @@ $(document).ready(function() {
   }
 
   //открытие попапа
-  $("[data-fancybox='form-popup']").fancybox({
-    touch: false,
-    infobar: false,
-    toolbar: false,
-    smallBtn: false,
-    buttons: ["close"],
-    animationEffect: false,
-    arrows: false
-	});
+  if ($("[data-fancybox='form-popup']").length) {
+    $("[data-fancybox='form-popup']").fancybox({
+      touch: false,
+      infobar: false,
+      toolbar: false,
+      smallBtn: false,
+      buttons: ["close"],
+      animationEffect: false,
+      arrows: false
+  	});
+  }
 
   //закрытие попапа
   $('.js-popup-close').on('click', function() {
@@ -209,4 +210,58 @@ $(document).ready(function() {
       $(".sender").html("______");
     }
   });
+
+  //слайдер изображений в галерее новости
+  if ($(".js-gallery-slider").length) {
+
+    $('.js-gallery-slider').slick({
+      mobileFirst: true,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      draggable: false,
+      swipe: false,
+      asNavFor: '.js-gallery-slider-nav'
+    });
+
+    $('.js-gallery-slider-nav').slick({
+      mobileFirst: true,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-gallery-slider',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 419,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 559,
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 679,
+          settings: {
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 959,
+          settings: {
+            slidesToShow: 7
+          }
+        },
+      ]
+    });
+  }
 });

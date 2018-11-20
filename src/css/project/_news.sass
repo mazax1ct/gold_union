@@ -1,0 +1,155 @@
+.news
+  color: #343835
+  display: block
+  max-width: 660px
+  margin-left: auto
+  margin-right: auto
+  text-decoration: none
+
+  &__image
+    display: block
+    margin-bottom: 25px
+    position: relative
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+  &__date
+    align-items: center
+    background-color: #fff
+    bottom: 0
+    display: flex
+    font-family: "Constantia", serif
+    font-family: 14px
+    justify-content: center
+    height: 48px
+    left: 50%
+    position: absolute
+    top: auto
+    transform: translateX(-50%)
+    text-align: center
+    width: 192px
+
+    @media(min-width: 768px)
+      bottom: auto
+      font-size: 17px
+      left: 0
+      transform: none
+      top: 0
+
+  &__title
+    display: block
+    font-family: "Constantia", serif
+    font-size: 23px
+    line-height: 1.2
+    margin-bottom: 0.5em
+
+    @media(min-width: 768px)
+      font-size: 27px
+
+  &__preview-text
+    display: block
+    font-size: 15px
+
+    @media(min-width: 1200px)
+      font-size: 17px
+
+.news-list
+  @media(min-width: 768px)
+    align-items: flex-start
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-left: -24px
+    margin-right: -24px
+
+  @media(min-width: 1200px)
+    margin-left: -30px
+    margin-right: -30px
+
+  .news
+    margin-bottom: 48px
+
+    @media(min-width: 768px)
+      margin-bottom: 60px
+
+    @media(min-width: 960px)
+      margin-left: 24px
+      margin-right: 24px
+      margin-bottom: 96px
+      width: calc(50% - 48px)
+
+    @media(min-width: 1200px)
+      margin-left: 30px
+      margin-right: 30px
+      width: calc(50% - 60px)
+
+    @media(min-width: 1600px)
+      margin-bottom: 140px
+
+    &:last-child
+      margin-bottom: 0
+
+    &:nth-last-child(2)
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+.news-detail
+  @media(min-width: 1200px)
+    padding-top: 80px
+    padding-left: 8.5%
+    padding-right: 8.5%
+
+  &__date
+    font-family: "Constantia", serif
+    font-size: 17px
+    margin-bottom: 12px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 27px
+      margin-bottom: 24px
+
+    @media(min-width: 960px)
+      text-align: left
+
+  &__title
+    font-family: "Constantia", serif
+    font-size: 27px
+    font-weight: 400
+    margin-bottom: 36px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 50px
+      margin-bottom: 80px
+
+    @media(min-width: 960px)
+      text-align: left
+
+  &__back
+    font-size: 13px
+    font-weight: 900
+    letter-spacing: 2px
+    line-height: 1
+    margin-top: 48px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      margin-top: 96px
+
+  &__back-icon
+    fill: #343835
+    height: 11px
+    margin-right: 5px
+    position: relative
+    top: 1px
+    width: 11px
+
+  &__back-link
+    color: #343835
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
