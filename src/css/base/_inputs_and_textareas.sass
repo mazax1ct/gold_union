@@ -5,19 +5,32 @@
   color: inherit
   font-size: 16px
   line-height: 26px
+  transition: border-color 0.3s, background-color 0.3s
   width: 100%
 
+  &:hover
+    border-color: #b8b8b8
+
   &:focus
-    border-color: #303032
+    border-color: #343835
 
   &.error
-    border-color: #ff0000
+    border-color: #d42300
+    background-color: #fdf4f2
 
+    &:hover,
     &:focus
-      border-color: #ff0000
+      border-color: #d42300
+      background-color: #fdf4f2
 
   &:disabled
+    background-color: #fff
+    border-color: #f3f3f3
     opacity: 0.5
+
+    &:hover
+      background-color: #fff
+      border-color: #f3f3f3
 
 .input
   height: 60px

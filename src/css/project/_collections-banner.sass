@@ -1,0 +1,129 @@
+.collections
+  margin-bottom: 140px
+
+  @media(min-width: 960px)
+    align-items: flex-start
+    display: flex
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    position: relative
+    padding-top: 12vw
+    z-index: 2
+
+  @media(min-width: 1900px)
+    padding-top: 240px
+
+.collection-banner
+  display: block
+  margin-bottom: 90px
+  text-decoration: none
+
+  &--right
+    &:first-child
+      @media(min-width: 960px)
+        margin-top: -12vw
+
+      @media(min-width: 1900px)
+        margin-top: -240px
+
+      .collection-banner__image
+        @media(min-width: 960px)
+          padding-bottom: 100%
+
+    @media(min-width: 960px)
+      margin-top: -26vw
+      width: 41.6666%
+
+    @media(min-width: 1900px)
+      margin-top: -480px
+
+    .collection-banner__image
+      @media(min-width: 960px)
+        padding-bottom: 140%
+
+    .collection-banner__image-title
+      @media(min-width: 768px)
+        left: auto
+        right: 0
+
+  &--left
+    display: flex
+    flex-direction: column
+
+    @media(min-width: 960px)
+      margin-right: 8.33333%
+      margin-bottom: 12vw
+      width: 50%
+
+    @media(min-width: 1600px)
+      margin-bottom: 240px
+
+    .collection-banner__image-block
+      @media(min-width: 960px)
+        order: 2
+
+    .collection-banner__image
+      @media(min-width: 960px)
+        padding-bottom: 116%
+
+    .banner__image-title
+      @media(min-width: 768px)
+        left: 0
+        margin-top: 0
+
+      @media(min-width: 960px)
+        bottom: auto
+        top: 0
+
+  &:hover
+    .collection-banner__image-title
+      @media(min-width: 768px)
+        background-color: rgba(255,255,255,0.5)
+        color: #fff
+
+  &:last-child
+    margin-bottom: 0
+
+  &__image-block,
+  &__image,
+  &__image-title
+    display: block
+
+  &__image-block
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    position: relative
+
+  &__image
+    align-items: center
+    background-size: cover
+    background-position: 0 0
+    padding-bottom: 114.16666%
+
+  &__image-title
+    background-color: #fff
+    color: #171619
+    font-family: "Constancia", serif
+    font-size: 27px
+    margin-left: 36px
+    margin-right: 36px
+    margin-top: -28px
+    padding: 24px
+    text-align: center
+    transition: color 0.3s, background-color 0.3s
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      bottom: 0
+      margin-left: auto
+      margin-right: auto
+      position: absolute
+      top: auto
+
+    @media(min-width: 1200px)
+      padding-left: 48px
+      padding-right: 48px
+
+    @media(min-width: 1600px)
+      padding: 40px 60px

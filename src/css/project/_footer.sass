@@ -65,8 +65,17 @@
   margin-right: 4px
   width: 40px
 
+  &:hover
+    .social-link__icon
+      fill: #f3f3f3
+
+  &:active
+    .social-link__icon
+      fill: #dcdcdc
+
   &__icon
     fill: #b8b8b8
+    transition: fill 0.3s
 
     &--vk
       height: 26px

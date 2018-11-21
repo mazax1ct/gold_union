@@ -1,4 +1,6 @@
 .shops-list
+  margin-bottom: 48px
+
   @media(min-width: 768px)
     display: flex
     justify-content: space-between
@@ -9,6 +11,7 @@
   @media(min-width: 1200px)
     margin-left: -30px
     margin-right: -30px
+    margin-bottom: 96px
 
 .shop-item
   line-height: 19px
@@ -47,10 +50,14 @@
       padding-left: 80px
 
   &__title
+    cursor: pointer
     font-family: "Constantia", serif
     font-size: 23px
     line-height: 1.2
     margin-bottom: 36px
+
+    &:hover
+      text-decoration: underline
 
     @media(min-width: 1200px)
       font-size: 27px

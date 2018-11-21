@@ -235,8 +235,17 @@
     &:hover
       border-color: #969696
 
+      .filter__checked-icon
+        fill: #343835
+
   &__reset
     background-color: #f3f3f3
+    transition: all 0.3s
+
+    &:hover,
+    &:active
+      background-color: #343835
+      color: #fff
 
   &__checked-icon
     fill: #969696
@@ -245,6 +254,7 @@
     vertical-align: middle
     position: relative
     top: -1px
+    transition: fill 0.3s
     width: 14px
 
   .checkbox-icon

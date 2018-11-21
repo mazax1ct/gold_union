@@ -1,5 +1,3 @@
-
-
 .search-bar
   max-width: 1440px
   margin-left: auto
@@ -28,13 +26,38 @@
 
   &__input
     background: url("../images/icons/search_icon.svg") no-repeat 30px 50% #fff
-    border: 1px solid #333736
+    border: 1px solid #f3f3f3
     font-size: 16px
     height: 60px
     line-height: 60px
     padding-left: 80px
     padding-right: 30px
+    transition: border-color 0.3s, background-color 0.3s
     width: 100%
+
+    &:hover
+      border-color: #b8b8b8
+
+    &:focus
+      border-color: #343835
+
+    &.error
+      border-color: #d42300
+      background-color: #fdf4f2
+
+      &:hover,
+      &:focus
+        border-color: #d42300
+        background-color: #fdf4f2
+
+    &:disabled
+      background-color: #fff
+      border-color: #f3f3f3
+      opacity: 0.5
+
+      &:hover
+        background-color: #fff
+        border-color: #f3f3f3
 
     &::-webkit-input-placeholder
       color: #b8b8b8

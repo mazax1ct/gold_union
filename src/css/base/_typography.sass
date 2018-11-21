@@ -12,6 +12,9 @@ a
   color: #d09b2b
   transition: color 0.3s
 
+  &:hover
+    color: #d5a541
+
 b
   font-weight: 700
 
@@ -69,6 +72,54 @@ h6,.h6
 
   @media(min-width: 1200px)
     margin-bottom: 96px
+
+.collection-title
+  font-family: "Constantia", serif
+  font-size: 40px
+  font-weight: 400
+  line-height: 1.2
+  margin-bottom: 24px
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 44px
+    margin-bottom: 48px
+
+  @media(min-width: 1200px)
+    font-size: 72px
+    margin-bottom: 96px
+
+.to-catalog
+  margin-bottom: 48px
+  text-align: center
+
+  @media(min-width: 960px)
+    margin-bottom: 96px
+
+  @media(min-width: 1600px)
+    margin-bottom: 240px
+
+  &__link
+    color: #343835
+    font-size: 14px
+    font-weight: 900
+    letter-spacing: 2px
+    text-transform: uppercase
+    transition: color 0.3s
+    text-decoration: none
+
+    &:hover
+      color: #b8b8b8
+
+      .to-catalog__link-icon
+        fill: #b8b8b8
+
+  &__link-icon
+    fill: #343835
+    height: 11px
+    margin-left: 5px
+    transition: fill 0.3s
+    width: 11px
 
 h1,.h1,
 h2,.h2,
