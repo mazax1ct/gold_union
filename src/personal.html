@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>GOLD UNION</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Личный кабинет</li>
+        </ul>
+        <h1 class="page-title">Личный кабинет</h1>
+        <div class="personal">
+          <div class="personal__form">
+            <form class="form" method="post" action="/">
+              <p class="form__title">Регистрационные данные</p>
+              <label class="form__label" for="NAME">
+                <input class="input" id="NAME" type="text" name="NAME" maxlength="50" value="" placeholder="Имя">
+              </label>
+              <label class="form__label" for="LAST_NAME">
+                <input class="input" id="LAST_NAME" type="text" name="LAST_NAME" maxlength="50" value="" placeholder="Фамилия">
+              </label>
+              <label class="form__label" for="EMAIL">
+                <input class="input" id="EMAIL" type="text" name="EMAIL" maxlength="50" value="" placeholder="E-Mail">
+              </label>
+              <label class="form__label" for="PERSONAL_PHONE">
+                <input class="input" id="PERSONAL_PHONE" type="text" name="PERSONAL_PHONE" maxlength="255" value="" placeholder="Телефон">
+              </label>
+              <label class="form__label" for="NEW_PASSWORD">
+                <input class="input" id="NEW_PASSWORD" type="password" name="NEW_PASSWORD" maxlength="50" value="" autocomplete="off" placeholder="Новый пароль">
+              </label>
+              <label class="form__label" for="NEW_PASSWORD_CONFIRM">
+                <input class="profile__input input" id="NEW_PASSWORD_CONFIRM" type="password" name="NEW_PASSWORD_CONFIRM" maxlength="50" value="" autocomplete="off" placeholder="Подтверждение нового пароля">
+              </label>
+              <p class="form__label"><span class="required">*</span>Пароль должен быть не менее 6 символов длиной.</p>
+              <div class="form__button-block">
+                <input class="form__button button button--dark" type="submit" name="save" value="Сохранить">
+                <input class="form__button button" type="reset" value="Сбросить">
+              </div>
+            </form>
+          </div>
+          <div class="personal__orders">
+            <div class="orders">
+              <p class="orders__title">Последние заказы</p>
+              <div class="order-small">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    //= template/subscribe.html
+  </div>
+  //= template/footer.html
+  //= template/search-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>

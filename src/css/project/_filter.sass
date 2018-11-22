@@ -198,12 +198,19 @@
     font-weight: 300
     padding: 10px
     text-transform: uppercase
+    transition: all 0.3s
     width: 48%
 
     &--reset
       background-color: #f3f3f3
       border-color: #f3f3f3
       color: #969696
+
+    &:hover,
+    &:active
+      background-color: #343835
+      border-color: #343835
+      color: #fff
 
   &__checked-block
     display: none

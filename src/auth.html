@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>GOLD UNION</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Авторизация</li>
+        </ul>
+        <h1 class="page-title">Авторизация</h1>
+        <form class="form" method="post" action="/">
+          <label class="form__label" for="USER_LOGIN">
+            <input class="input" id="USER_LOGIN" type="text" name="USER_LOGIN" maxlength="255" value="" placeholder="Email">
+          </label>
+          <label class="form__label" for="USER_PASSWORD">
+            <input class="input" id="USER_PASSWORD" type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" placeholder="Пароль">
+          </label>
+          <label class="checkbox-label" for="USER_REMEMBER">
+            <input class="checkbox-input" id="USER_REMEMBER" type="checkbox" name="USER_REMEMBER">
+            <span class="checkbox-icon"></span>
+            Запомнить меня на этом компьютере
+          </label>
+          <div class="form__button-block">
+            <input class="form__button button button--dark" type="submit" name="Login" value="Войти">
+          </div>
+          <noindex class="profile__note">
+            <p><a href="forgot.html" rel="nofollow">Забыли свой пароль?</a></p>
+            <p>
+              Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.<br>
+              <a href="register.html" rel="nofollow">Зарегистрироваться</a>
+            </p>
+          </noindex>
+        </form>
+      </div>
+    </div>
+    //= template/subscribe.html
+  </div>
+  //= template/footer.html
+  //= template/search-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>GOLD UNION</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Запрос пароля</li>
+        </ul>
+        <h1 class="page-title">Запрос пароля</h1>
+        <form class="form" method="post" action="/">
+          <p>Если вы забыли пароль, введите E-Mail.<br>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
+          <p>Выслать контрольную строку</p>
+          <label class="form__label" for="USER_EMAIL">
+            <input class="input" id="USER_EMAIL" type="text" name="USER_EMAIL" maxlength="255" placeholder="E-Mail">
+          </label>
+          <div class="form__button-block">
+            <input class="form__button button button--dark" type="submit" name="send_account_info" value="Выслать">
+          </div>
+        </form>
+        <p><a href="auth.html">Авторизация</a></p>
+      </div>
+    </div>
+    //= template/subscribe.html
+  </div>
+  //= template/footer.html
+  //= template/search-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>
