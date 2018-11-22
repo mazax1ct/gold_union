@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>GOLD UNION</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Корзина</li>
+        </ul>
+        <h1 class="page-title">Ваша корзина</h1>
+        <div class="cart">
+          <div class="cart__list">
+            <div class="cart-item">
+              <a class="cart-item__image" href="catalog-detail.html">
+                <img src="images/content/img_12.jpg" alt="Кольцо Bagha Le Tigre">
+              </a>
+              <div class="cart-item__description">
+                <div class="cart-item__title-block">
+                  <p class="cart-item__title"><a href="catalog-detail.html">Кольцо Bagha Le Tigre</a></p>
+                  <p class="cart-item__prop">Размер: 17</p>
+                </div>
+                <div class="cart-item__price-block">
+                  <p class="cart-item__price cart-item__price--old">310 000 Р</p>
+                  <p class="cart-item__price cart-item__price--new">251 000 Р</p>
+                </div>
+                <a class="cart-item__delete" href="#" title="Удалить"><svg class="cart-item__delete-icon" aria-hidden="true"><use xlink:href="#close"/></svg></a>
+              </div>
+            </div>
+            <div class="cart-item">
+              <a class="cart-item__image" href="catalog-detail.html">
+                <img src="images/content/img_11.jpg" alt="Кольцо Ketos L’hippocampe">
+              </a>
+              <div class="cart-item__description">
+                <div class="cart-item__title-block">
+                  <p class="cart-item__title"><a href="catalog-detail.html">Кольцо Ketos L’hippocampe</a></p>
+                  <p class="cart-item__prop">Размер: 15</p>
+                </div>
+                <div class="cart-item__price-block">
+                  <p class="cart-item__price cart-item__price--old">310 000 Р</p>
+                  <p class="cart-item__price cart-item__price--new">180 000 Р</p>
+                </div>
+                <a class="cart-item__delete" href="#" title="Удалить"><svg class="cart-item__delete-icon" aria-hidden="true"><use xlink:href="#close"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="cart__result">
+            <p>Итого к оплате: <span class="cart__result-cost">431 000 Р</span></p>
+          </div>
+          <div class="cart__buttons">
+            <a class="button button--dark" href="#">Оформить заказ с регистрацией</a>
+            <a class="button" href="#">Оформить заказ без регистрации</a>
+          </div>
+          <label class="cart__terms checkbox-label" for="terms">
+            <input class="checkbox-input" id="terms" type="checkbox">
+            <span class="checkbox-icon"></span>
+            Да, я подтверждаю свое <a href="#">согласие на обработку персональных данных</a>
+          </label>
+        </div>
+      </div>
+    </div>
+    //= template/subscribe.html
+  </div>
+  //= template/footer.html
+  //= template/search-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>
