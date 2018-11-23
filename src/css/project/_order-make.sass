@@ -1,0 +1,201 @@
+.order-make
+  @media(min-width: 960px)
+    display: flex
+
+  &__form
+    margin-bottom: 60px
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      padding-right: 8.3333%
+      width: 50%
+
+  &__form-section
+    padding-bottom: 20px
+    transition: padding-bottom 0.3s
+
+    @media(min-width: 960px)
+      padding-bottom: 30px
+
+    &.is-active
+      padding-bottom: 40px
+
+      @media(min-width: 960px)
+        padding-bottom: 60px
+
+  &__form-title
+    align-items: center
+    color: #b8b8b8
+    cursor: pointer
+    display: flex
+    font-family: "Constantia", serif
+    font-size: 23px
+    line-height: 1.2
+    transition: color 0.3s
+
+    &:hover,
+    &.is-active
+      color: #343835
+
+      .order-make__form-title-num
+        background-color: #343835
+        color: #fff
+
+    &.is-active
+      cursor: default
+
+  &__form-title-num
+    align-items: center
+    background-color: #f3f3f3
+    color: #b8b8b8
+    display: flex
+    justify-content: center
+    height: 40px
+    margin-right: 20px
+    transition: color 0.3s, background-color 0.3s
+    width: 40px
+
+  &__step-change
+    margin-top: 40px
+
+    @media(min-width: 960px)
+      margin-top: 60px
+
+  &__products
+    @media(min-width: 960px)
+      width: 50%
+
+  &__products-title
+    font-family: "Constantia", serif
+    font-size: 23px
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 27px
+      margin-bottom: 60px
+
+  &__result
+    font-size: 13px
+    padding-right: 24px
+    padding-left: 24px
+    padding-top: 48px
+    text-align: right
+
+    @media(min-width: 768px)
+      font-size: 15px
+      padding-right: 48px
+      padding-left: 48px
+
+    @media(min-width: 1400px)
+      padding-right: 60px
+      padding-left: 60px
+
+  &__result-pre
+    align-items: center
+    display: flex
+    color: #b8b8b8
+    justify-content: space-between
+    margin-bottom: 12px
+
+  &__result-cost
+    color: #343835
+    font-size: 17px
+    line-height: 1
+    margin-left: 24px
+    white-space: nowrap
+
+  &__result-summ
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-top: 24px
+
+.order-item
+  border: 1px solid #f3f3f3
+  display: flex
+  margin-top: -1px
+  position: relative
+
+  &:first-child
+    margin-top: 0
+
+  &__image
+    display: block
+    max-width: 190px
+    padding: 36px 24px
+    text-align: center
+    width: 55.88%
+
+  &__description
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    justify-content: center
+    padding: 36px 24px 36px 0
+
+    @media(min-width: 600px)
+      align-items: center
+      flex-direction: row
+      padding-right: 48px
+
+    @media(min-width: 960px) and (max-width: 1199px)
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding-right: 36px
+
+    @media(min-width: 1400px)
+      padding-right: 60px
+
+  &__title-block
+    margin-bottom: 12px
+
+    @media(min-width: 600px)
+      flex-grow: 1
+      margin-bottom: 0
+      padding-right: 48px
+
+    @media(min-width: 960px) and (max-width: 1199px)
+      flex-grow: 0
+      margin-bottom: 24px
+      padding-right: 0
+
+  &__title
+    font-family: "Constantia", serif
+    font-size: 15px
+    line-height: 1.2
+    margin-bottom: 6px
+
+    @media(min-width: 768px)
+      font-size: 17px
+
+    a
+      color: #343835
+      text-decoration: none
+
+      &:hover
+        color: #d5a541
+        text-decoration: underline
+
+  &__prop
+    color: #b8b8b8
+    font-size: 13px
+    line-height: 1
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+  &__price
+    font-size: 17px
+    line-height: 1
+    white-space: nowrap
+
+    &--old
+      color: #b8b8b8
+      font-size: 15px
+      margin-bottom: 5px
+      text-decoration: line-through
+
+    &--new
+      color: #d09b2b

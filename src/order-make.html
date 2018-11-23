@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>GOLD UNION</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Оформление заказа</li>
+        </ul>
+        <h1 class="page-title">Оформление заказа</h1>
+        <div class="order-make">
+          <div class="order-make__form">
+            <p>Если вы уже совершали покупки на нашем сайте, <a href="auth.html"><b>войдите</b></a> используя свой e-mail, чтобы не заполнять обязательные поля</p>
+            <div class="order-make__form-section is-active">
+              <p class="order-make__form-title is-active"><span class="order-make__form-title-num">1</span> Данные покупателя</p>
+              <div class="form">
+                <label class="form__label" for="NAME">
+                  <input class="input" id="NAME" type="text" name="NAME" maxlength="50" value="" placeholder="Имя">
+                </label>
+                <label class="form__label" for="LAST_NAME">
+                  <input class="input" id="LAST_NAME" type="text" name="LAST_NAME" maxlength="50" value="" placeholder="Фамилия">
+                </label>
+                <label class="form__label" for="EMAIL">
+                  <input class="input" id="EMAIL" type="text" name="EMAIL" maxlength="50" value="" placeholder="E-Mail">
+                </label>
+                <label class="form__label" for="PERSONAL_PHONE">
+                  <input class="input" id="PERSONAL_PHONE" type="text" name="PERSONAL_PHONE" maxlength="255" value="" placeholder="Телефон">
+                </label>
+              </div>
+              <div class="order-make__step-change">
+                <button class="button button--dark" type="button">следующий шаг</button>
+              </div>
+            </div>
+            <div class="order-make__form-section">
+              <p class="order-make__form-title"><span class="order-make__form-title-num">2</span> Выбор доставки</p>
+            </div>
+            <div class="order-make__form-section">
+              <p class="order-make__form-title"><span class="order-make__form-title-num">3</span> Выбор способа оплаты</p>
+            </div>
+            <div class="order-make__form-section">
+              <p class="order-make__form-title"><span class="order-make__form-title-num">4</span> Подтверждение</p>
+            </div>
+          </div>
+          <div class="order-make__products">
+            <p class="order-make__products-title">В вашем заказе <b>2</b> товара:</p>
+            <div class="order-make__products-list">
+              <div class="order-item">
+                <a class="order-item__image" href="catalog-detail.html">
+                  <img src="images/content/img_12.jpg" alt="Кольцо Bagha Le Tigre">
+                </a>
+                <div class="order-item__description">
+                  <div class="order-item__title-block">
+                    <p class="order-item__title"><a href="catalog-detail.html">Кольцо Bagha Le Tigre</a></p>
+                    <p class="order-item__prop">Размер: 17</p>
+                  </div>
+                  <div class="order-item__price-block">
+                    <p class="order-item__price order-item__price--old">310 000 Р</p>
+                    <p class="order-item__price order-item__price--new">251 000 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="order-item">
+                <a class="order-item__image" href="catalog-detail.html">
+                  <img src="images/content/img_11.jpg" alt="Кольцо Ketos L’hippocampe">
+                </a>
+                <div class="order-item__description">
+                  <div class="order-item__title-block">
+                    <p class="order-item__title"><a href="catalog-detail.html">Кольцо Ketos L’hippocampe</a></p>
+                    <p class="order-item__prop">Размер: 15</p>
+                  </div>
+                  <div class="order-item__price-block">
+                    <p class="order-item__price">180 000 Р</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-make__result">
+              <p class="order-make__result-pre">Товаров на сумму: <span class="order-make__result-cost">431 000 Р</span></p>
+              <p class="order-make__result-pre">Доставка: <span class="order-make__result-cost">300 Р</span></p>
+              <p class="order-make__result-summ">Итого к оплате: <span class="order-make__result-cost"><b>431 300 Р</b></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    //= template/subscribe.html
+  </div>
+  //= template/footer.html
+  //= template/search-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>
