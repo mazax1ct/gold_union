@@ -8,10 +8,313 @@
     @media(min-width: 768px)
       font-size: 27px
 
+  &__list
+    margin-bottom: 20px
+
+  &__to_list
+    align-items: center
+    color: #343835
+    display: flex
+    font-size: 15px
+    font-weight: 900
+    letter-spacing: 2px
+    padding: 10px 0
+    text-transform: uppercase
+    text-decoration: none
+
+    &:hover
+      color: #b8b8b8
+
+      .orders__to_list-icon
+        fill: #b8b8b8
+
+  &__to_list-icon
+    fill: #343835
+    height: 9px
+    margin-left: 5px
+    transition: fill 0.3s
+    width: 9px
+
+    &--list
+      height: 20px
+      margin-left: 0
+      margin-right: 15px
+      width: 20px
+
 .order-small
+  border-bottom: 1px solid #f3f3f3
+  margin-bottom: 36px
+  padding-bottom: 24px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__inner
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+
   &__title-block
     margin-bottom: 20px
+
+    @media(min-width: 768px)
+      padding-right: 48px
+
+    @media(min-width: 1200px)
+      padding-right: 60px
 
   &__title
     font-size: 17px
     font-weight: 700
+    line-height: 1.2
+
+    @media(min-width: 1600px)
+      font-size: 23px
+
+  &__description
+    @media(min-width: 768px)
+      flex-basis: 63%
+      flex-grow: 1
+      min-width: 63%
+      width: 63%
+
+  &__table
+    font-size: 13px
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+    td
+      padding: 10px 0
+
+    tr
+      &:first-child
+        td
+          padding-top: 3px
+
+    a
+      color: #343835
+      text-decoration: none
+
+      &:hover
+        color: #d5a541
+
+  &__prop
+    color: #b8b8b8
+
+  &__prop-val
+    text-align: right
+
+  &__price
+    font-size: 17px
+
+  &__buttons-block
+    align-items: center
+    display: flex
+    justify-content: flex-end
+    margin-top: 20px
+    text-align: right
+
+  &__button
+    align-items: center
+    color: #343835
+    display: flex
+    font-size: 10px
+    font-weight: 900
+    letter-spacing: 2px
+    margin-left: 12px
+    padding: 10px 0
+    text-transform: uppercase
+    text-decoration: none
+
+    @media(min-width: 414px)
+      font-size: 13px
+      margin-left: 24px
+
+    @media(min-width: 1200px)
+      margin-left: 48px
+
+    &:hover
+      color: #b8b8b8
+
+      .order-small__button-icon
+        fill: #b8b8b8
+
+    &:first-child
+      margin-left: 0
+
+    &--cancel
+      color: #b8b8b8
+
+      .order-small__button-icon
+        fill: #b8b8b8
+        height: 12px
+        width: 12px
+
+      &:hover
+        color: #343835
+
+        .order-small__button-icon
+          fill: #343835
+
+  &__button-icon
+    fill: #343835
+    height: 9px
+    margin-left: 5px
+    transition: fill 0.3s
+    width: 9px
+
+.order
+  border-bottom: 1px solid #f3f3f3
+  margin-bottom: 36px
+  padding-bottom: 24px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__inner
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+
+  &__title-block
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      padding-right: 48px
+
+    @media(min-width: 1200px)
+      padding-right: 60px
+
+  &__title
+    font-size: 17px
+    font-weight: 700
+    line-height: 1.2
+
+    @media(min-width: 1600px)
+      font-size: 23px
+
+  &__description
+    @media(min-width: 768px)
+      flex-basis: 63%
+      flex-grow: 1
+      min-width: 63%
+      width: 63%
+
+    @media(min-width: 1200px)
+      align-items: flex-start
+      display: flex
+
+  &__description-block
+    @media(min-width: 1200px)
+      min-width: 40%
+      padding-right: 60px
+      width: 40%
+
+    @media(min-width: 1400px)
+      padding-right: 120px
+
+    &:last-child
+      @media(min-width: 1200px)
+        min-width: 20%
+        padding-right: 0
+        width: 20%
+
+  &__table
+    font-size: 13px
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+    td
+      padding: 10px 0
+
+    tr
+      &:first-child
+        td
+          padding-top: 3px
+
+    a
+      color: #343835
+      text-decoration: none
+
+      &:hover
+        color: #d5a541
+
+  &__prop
+    color: #b8b8b8
+
+  &__prop-val
+    text-align: right
+
+  &__price
+    font-size: 17px
+    white-space: nowrap
+
+  &__buttons-block
+    align-items: center
+    display: flex
+    justify-content: flex-end
+    margin-top: 20px
+    text-align: right
+
+    @media(min-width: 1200px)
+      align-items: flex-end
+      display: flex
+      flex-direction: column
+      margin-top: 0
+      text-align: right
+
+  &__button
+    align-items: center
+    color: #343835
+    display: flex
+    font-size: 10px
+    font-weight: 900
+    letter-spacing: 2px
+    margin-left: 12px
+    padding: 10px 0
+    text-transform: uppercase
+    text-decoration: none
+    white-space: nowrap
+
+    @media(min-width: 414px)
+      font-size: 13px
+      margin-left: 24px
+
+    @media(min-width: 1200px)
+      margin-left: 48px
+
+    &:hover
+      color: #b8b8b8
+
+      .order-small__button-icon
+        fill: #b8b8b8
+
+    &:first-child
+      margin-left: 0
+
+    &--cancel
+      color: #b8b8b8
+
+      .order-small__button-icon
+        fill: #b8b8b8
+        height: 12px
+        width: 12px
+
+      &:hover
+        color: #343835
+
+        .order-small__button-icon
+          fill: #343835
+
+  &__button-icon
+    fill: #343835
+    height: 9px
+    margin-left: 5px
+    transition: fill 0.3s
+    width: 9px
