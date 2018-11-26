@@ -213,15 +213,12 @@ $(document).ready(function() {
 
   //слайдер изображений в галерее новости
   if ($(".js-gallery-slider").length) {
-
     $('.js-gallery-slider').slick({
       mobileFirst: true,
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
-      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
-      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      arrows: false,
       draggable: false,
       swipe: false,
       asNavFor: '.js-gallery-slider-nav'
@@ -258,10 +255,112 @@ $(document).ready(function() {
         {
           breakpoint: 959,
           settings: {
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+            appendArrows: $(".gallery-slider"),
             slidesToShow: 7
           }
         },
       ]
     });
+  }
+
+  //запуск плавающего левого меню
+  if ($("#article-nav").length) {
+    if($("body").width() >= 768 && $("body").width() < 1200){
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 165
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -165
+        });
+      }, 100);
+    } else if($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 175
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -175
+        });
+      }, 100);
+    }
+
+    //если блок для контента пустой, открепляем плавающее левое меню
+    if ($(".js-content-with-sticky").length) {
+      if( $('.js-content-with-sticky').html().trim() === '') {
+        $(".js-sticky-block").trigger("sticky_kit:detach");
+      }
+    }
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при резайзе
+$(window).resize( function(){
+  if ($("#article-nav").length) {
+    if($("body").width() >= 768 && $("body").width() < 1200){
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 165
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -165
+        });
+      }, 100);
+    } else if($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 175
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -175
+        });
+      }, 100);
+    }
+  }
+});
+
+//открепляем и перезапускаем прилипающий блок при повороте устройства
+$(window).on("orientationchange", function(event) {
+  if ($("#article-nav").length) {
+    if($("body").width() >= 768 && $("body").width() < 1200){
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 165
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -165
+        });
+      }, 100);
+    } else if($("body").width() >= 1200) {
+      $(".js-sticky-block").trigger("sticky_kit:detach");
+      setTimeout(function() {
+        $(".js-sticky-block").stick_in_parent({
+          offset_top: 175
+        });
+
+        //навигация по якорям в новости
+        $("#article-nav").ddscrollSpy({
+          scrolltopoffset: -175
+        });
+      }, 100);
+    }
   }
 });
