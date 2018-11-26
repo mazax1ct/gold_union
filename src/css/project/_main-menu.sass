@@ -48,12 +48,6 @@
       @media(min-width: 1200px)
         display: none
 
-    &:hover
-      .sub-menu,
-      .sub-menu.is-open
-        @media(min-width: 1200px)
-          display: block
-
   &__link
     color: #343835
     display: block
@@ -125,6 +119,14 @@
     height: 12px
     transition: fill 0.3s
     width: 12px
+
+.no-js
+  .main-menu__list-item
+    &:hover
+      .sub-menu,
+      .sub-menu.is-open
+        @media(min-width: 1200px)
+          display: block
 
 .sub-menu
   display: none

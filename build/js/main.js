@@ -9,6 +9,9 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function() {
+  //убираем пометку о том что js выключен
+  $('body').removeClass('no-js');
+
   //открытие поиска
   $(".js-search-opener").click(function() {
     $(".search-popup").toggleClass("is-open");
@@ -41,6 +44,13 @@ $(document).ready(function() {
     $(".main-menu__link:not(.main-menu__link--root)").removeClass("hidden");
     $(".sub-menu").removeClass("is-open");
   });
+
+  $(".main-menu__link--root").hover(
+    function() {
+      $(this).parent(".main-menu__list-item").find(".sub-menu").slideToggle();
+    }, function() {
+      $(this).parent(".main-menu__list-item").find(".sub-menu").slideToggle();
+    });
 
   //слайдер новостей
   if ($('.js-news-slider').length) {
