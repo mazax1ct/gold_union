@@ -270,9 +270,8 @@
       text-align: right
 
   &__button
-    align-items: center
     color: #343835
-    display: flex
+    display: inline-block
     font-size: 10px
     font-weight: 900
     letter-spacing: 2px
@@ -281,6 +280,7 @@
     padding: 10px 0
     text-transform: uppercase
     text-decoration: none
+    vertical-align: middle
     white-space: nowrap
 
     @media(min-width: 414px)
@@ -314,8 +314,12 @@
           fill: #343835
 
   &__button-icon
+    display: inline-block
     fill: #343835
     height: 9px
     margin-left: 5px
+    position: relative
+    top: -1px
     transition: fill 0.3s
+    vertical-align: middle
     width: 9px
