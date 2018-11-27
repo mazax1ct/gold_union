@@ -41,7 +41,24 @@
   &__price
     display: block
 
-  &__image
+  &__img
+    align-items: center
+    display: flex
+    justify-content: center
+    height: 100%
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      height: 56%
+
+    img
+      max-width: 72%
+      max-height: 100%
+      height: auto
+
+  //&__image
     background-position: 50% 50%
     background-repeat: no-repeat
     background-size: auto 100%
@@ -54,23 +71,26 @@
     text-align: center
     width: 100%
 
-    @media(min-width: 1600px)
+    //@media(min-width: 1600px)
       margin-bottom: 40px
 
-    img
+    //img
       height: 100%
 
   &__title
     color: #343835
-    text-align: center
 
   &__price
     color: #d09b2b
-    text-align: center
 
   &__title,
   &__price
     font-size: 12px
+    max-height: 1.5em
+    overflow: hidden
+    text-overflow: ellipsis
+    text-align: center
+    white-space: nowrap
 
     @media(min-width: 1600px)
       font-size: 15px
