@@ -1,17 +1,17 @@
 .main-menu
   background-color: #fff
-  height: calc(100% - 96px)
+  height: calc(100% - 76px)
   display: none
   left: 0
   overflow-y: auto
   position: fixed
-  top: 96px
+  top: 76px
   width: 100%
   z-index: 1
 
   @media(min-width: 768px)
-    height: calc(100% - 144px)
-    top: 144px
+    height: calc(100% - 103px)
+    top: 103px
 
   @media(min-width: 1200px)
     background-color: #343835
@@ -29,24 +29,45 @@
     line-height: 27px
 
     @media(min-width: 1200px)
-      max-width: 1440px
+      max-width: 1536px
       margin-left: auto
       margin-right: auto
+      padding-left: 48px
+      padding-right: 48px
+      width: 82%
 
   &__list
     list-style: none
     margin: 0
-    padding: 0
+    padding: 20px 0
 
     @media(min-width: 1200px)
       display: flex
       justify-content: space-between
       justify-content: center
+      padding-top: 0
+      padding-bottom: 0
 
   &__list-item
     &--mobile
       @media(min-width: 1200px)
         display: none
+
+    &--desktop
+      .main-menu__link
+        @media(min-width: 1200px)
+          margin-left: -24px
+
+        @media(min-width: 1400px)
+          margin-left: -48px
+
+    &:last-child
+      .main-menu__link
+        @media(min-width: 1200px)
+          margin-right: -24px
+
+        @media(min-width: 1400px)
+          margin-right: -48px
 
   &__link
     color: #343835
@@ -66,16 +87,19 @@
       align-items: center
       color: #fff
       display: flex
-      font-size: 13px
+      font-size: 12px
+      font-weight: 500
       line-height: 19px
-      min-height: 60px
-      padding-left: 60px
-      padding-right: 60px
+      min-height: 48px
+      padding-left: 24px
+      padding-right: 24px
       text-align: center
 
     @media(min-width: 1400px)
-      font-size: 14px
+      font-size: 13px
       line-height: 27px
+      padding-left: 48px
+      padding-right: 48px
 
     &:hover,
     &.is-active
@@ -136,13 +160,17 @@
   @media(min-width: 1200px)
     background-color: #fff
     left: 0
-    padding-top: 40px
-    padding-bottom: 40px
+    padding-top: 20px
+    padding-bottom: 20px
     position: absolute
     top: 100%
     text-align: left
     width: 100%
     z-index: 1
+
+  @media(min-width: 1400px)
+    padding-top: 30px
+    padding-bottom: 30px
 
   &.is-open
     display: block
@@ -156,8 +184,13 @@
       margin-left: auto
       margin-right: auto
       max-width: 1536px
-      padding-left: 48px
+      padding-left: 24px
+      padding-right: 24px
+      width: 82%
+
+    @media(min-width: 1400px)
       padding-right: 48px
+      padding-left: 48px
 
   &__list
     list-style: none
@@ -184,11 +217,11 @@
       font-weight: 700
 
       @media(min-width: 1200px)
-        margin-bottom: 10px
+        font-size: 15px
 
     &--pre_last
       @media(min-width: 1200px)
-        margin-bottom: 30px
+        margin-bottom: 20px
 
     &--more
       @media(min-width: 1200px)
@@ -203,6 +236,20 @@
     padding-right: 24px
     text-decoration: none
     transition: color 0.3s
+
+    @media(min-width: 1200px)
+      font-size: 14px
+      padding-top: 5px
+      padding-bottom: 6px
+
+    @media(min-width: 1400px)
+      font-size: 15px
+      padding-left: 0
+      padding-top: 8px
+      padding-bottom: 9px
+
+    @media(min-width: 1600px)
+      padding-left: 12px
 
     &--more
       font-weight: 700

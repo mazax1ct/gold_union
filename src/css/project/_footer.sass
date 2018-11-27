@@ -1,7 +1,7 @@
 .footer
   background-color: #fff
   padding-top: 45px
-  padding-bottom: 45px
+  padding-bottom: 35px
 
   @media (min-width: 768px)
     height: 140px
@@ -9,6 +9,7 @@
   &__inner
     display: flex
     flex-direction: column
+    position: relative
 
     @media(min-width: 768px)
       flex-direction: row
@@ -17,14 +18,17 @@
   &__logo
     margin-left: auto
     margin-right: auto
-    margin-bottom: 66px
+    margin-bottom: 30px
     order: 1
     width: 240px
 
     @media (min-width: 768px)
+      left: 50%
       margin-bottom: 0
-      margin-top: 7px
       order: 2
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
       width: 150px
 
     @media (min-width: 992px)
@@ -34,7 +38,7 @@
     align-items: flex-start
     display: flex
     justify-content: center
-    margin-bottom: 75px
+    margin-bottom: 30px
     order: 2
 
     @media(min-width: 768px)
@@ -50,11 +54,15 @@
     text-align: center
 
     @media(min-width: 768px)
-      font-size: 14px
+      font-size: 13px
       min-width: 240px
       order: 1
+      padding-top: 4px
       text-align: left
       width: 240px
+
+    @media(min-width: 960px)
+      font-size: 14px
 
 .social-link
   align-items: center
