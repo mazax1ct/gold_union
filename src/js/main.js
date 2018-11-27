@@ -45,12 +45,16 @@ $(document).ready(function() {
     $(".sub-menu").removeClass("is-open");
   });
 
-  $(".main-menu__link--root").hover(
-    function() {
-      $(this).parent(".main-menu__list-item").find(".sub-menu").slideToggle();
-    }, function() {
-      $(this).parent(".main-menu__list-item").find(".sub-menu").slideToggle();
-    });
+  //выпадающее меню второго уровня
+  if($("body").width()>1199){
+    $(".main-menu__list-item").hover(
+      function() {
+        $(this).find(".sub-menu").stop(true, true).slideToggle(200);
+      }, function() {
+        $(this).find(".sub-menu").stop(true, true).slideToggle(200);
+      }
+    );
+  }
 
   //слайдер новостей
   if ($('.js-news-slider').length) {
