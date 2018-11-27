@@ -29,6 +29,9 @@
   &__button-block
     margin-bottom: 20px
 
+    @media(min-width: 660px)
+      display: flex
+
     &:last-child
       margin-bottom: 0
 
@@ -36,7 +39,13 @@
     width: 100%
 
     @media(min-width: 660px)
-      width: 240px
+      margin-right: 10px
+      max-width: 240px
+      width: calc(50% - 5px)
+
+    &:last-child
+      @media(min-width: 660px)
+        margin-right: 0
 
     & + &
       margin-top: 12px
