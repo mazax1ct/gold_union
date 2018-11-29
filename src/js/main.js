@@ -135,6 +135,18 @@ $(document).ready(function() {
     }
   });
 
+  if($("body").width() > 959){
+    $(".filter__dropdown").mouseover(function() {
+      $(this).addClass("hovered");
+    });
+
+    $(".filter__dropdown").mouseleave(function() {
+      $(".filter__inner").removeClass("section-open");
+      $(".filter__section-opener").removeClass("is-open");
+      $(this).removeClass("is-open").removeClass("hovered");
+    });
+  }
+
   //открытие/закрытие аккордиона
   $(".js-accordion-opener").click(function() {
     $(this).toggleClass("is-open");
