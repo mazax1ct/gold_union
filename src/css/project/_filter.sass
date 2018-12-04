@@ -1,7 +1,7 @@
 .filter
   margin-bottom: 24px
 
-  @media(min-width: 1200px)
+  //@media(min-width: 1200px)
     margin-bottom: 50px
 
   &__opener
@@ -69,7 +69,7 @@
     border: 1px solid transparent
     cursor: pointer
     display: inline-block
-    font-size: 14px
+    font-size: 13px
     letter-spacing: 2px
     padding: 4px 10px 5px 30px
     position: relative
@@ -98,14 +98,14 @@
     width: 11px
 
   &__dropdown
-    background-color: #f3f3f3
+    background-color: #fff
     display: none
     padding: 20px 10px
 
     @media(min-width: 960px)
       left: 0
-      padding-top: 50px
-      padding-bottom: 50px
+      padding-top: 24px
+      padding-bottom: 24px
       position: absolute
       top: 50px
       width: 100%
@@ -116,7 +116,8 @@
 
       &::before
         @media(min-width: 960px)
-          background-color: #f3f3f3
+          background-color: #fff
+          box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
           content: ""
           height: 100%
           left: 50%
@@ -169,7 +170,7 @@
     color: #343835
     display: inline-block
     font-size: 14px
-    font-weight: 500
+    //font-weight: 500
     padding: 5px 0
     text-decoration: none
     vertical-align: top
@@ -227,7 +228,7 @@
     color: #969696
     cursor: pointer
     font-family: 'Raleway', sans-serif
-    font-size: 14px
+    font-size: 13px
     height: 30px
     letter-spacing: 1px
     margin-right: 10px
@@ -263,6 +264,9 @@
     transition: fill 0.3s
     width: 14px
 
-  .checkbox-icon
+  .checkbox-label
+    font-weight: 400
+
+  //.checkbox-icon
     background-color: #fff
     border-color: #fff

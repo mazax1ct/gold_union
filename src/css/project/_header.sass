@@ -8,15 +8,16 @@
   z-index: 100
 
   @media(min-width: 1200px)
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
+    //box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
+    position: absolute
 
   &.scrolled
-    .header__top
+    //.header__top
       @media(min-width: 1200px)
         padding-top: 15px
         padding-bottom: 15px
 
-    .logo
+    //.logo
       @media(min-width: 1200px)
         width: 200px
 
@@ -44,8 +45,11 @@
     @media(min-width: 1200px)
       box-shadow: none
       max-width: 1120px
-      padding-top: 30px
-      padding-bottom: 30px
+      //padding-top: 30px
+      //padding-bottom: 30px
+
+      padding-top: 22px
+      padding-bottom: 22px
 
     //@media(min-width: 1400px)
       padding-top: 40px
@@ -80,7 +84,7 @@
 
   &__personal-link
     color: #353535
-    font-size: 15px
+    font-size: 14px
     font-weight: 500
     line-height: 27px
     margin-left: 40px
@@ -148,7 +152,7 @@
 .service-menu
   align-items: center
   display: flex
-  font-size: 15px
+  font-size: 14px
   font-weight: 500
   line-height: 27px
 
@@ -205,7 +209,7 @@
     transform: translate(-50%, -50%)
     width: 20px
 
-    @media(min-width: 1200px)
+    //@media(min-width: 1200px)
       fill: #b8b8b8
 
   &__decimal
@@ -228,5 +232,5 @@
     height: 20px
     width: 20px
 
-    @media(min-width: 1200px)
+    //@media(min-width: 1200px)
       fill: #b8b8b8

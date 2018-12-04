@@ -6,7 +6,11 @@
     padding-left: 24px
     padding-right: 24px
 
-  @media(min-width: 1200px)
+  @media(min-width: 960px)
+    padding-top: 50px
+    padding-bottom: 50px
+
+  //@media(min-width: 1200px)
     padding-top: 70px
     padding-bottom: 90px
 
@@ -15,9 +19,9 @@
     margin-right: auto
     max-width: 580px
 
-    @media(min-width: 1200px)
-      max-width: 720px
-      width: 720px
+    @media(min-width: 960px)
+      max-width: 600px
+      width: 600px
 
   &__title
     color: #676767
@@ -29,7 +33,8 @@
     text-transform: uppercase
 
     @media(min-width: 768px)
-      font-size: 23px
+      font-size: 20px
+      margin-bottom: 5px
 
   &__subtitle
     font-size: 15px
@@ -37,7 +42,10 @@
     margin-bottom: 20px
     text-align: center
 
-    @media(min-width: 1200px)
+    @media(min-width: 960px)
+      margin-bottom: 10px
+
+    //@media(min-width: 1200px)
       font-size: 17px
 
   &__form
@@ -45,6 +53,9 @@
 
     @media(min-width: 768px)
       display: flex
+
+    @media(min-width: 960px)
+      margin-bottom: 10px
 
   &__form-label
     display: block
@@ -71,6 +82,10 @@
       padding-left: 30px
       padding-right: 30px
       text-align: left
+
+    @media(min-width: 960px)
+      height: 50px
+      line-height: 50px
 
     &::-webkit-input-placeholder
       color: #b8b8b8
@@ -100,6 +115,10 @@
     transition: all 0.3s
     width: 100%
 
+    @media(min-width: 960px)
+      height: 50px
+      font-size: 13px
+
     &:hover,
     &:active
       background-color: #d5a541
@@ -109,7 +128,7 @@
     @media(min-width: 768px)
       width: 192px
 
-    @media(min-width: 1200px)
+    //@media(min-width: 1200px)
       width: 240px
 
   &__note

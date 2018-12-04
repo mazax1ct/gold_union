@@ -295,7 +295,7 @@ $(document).ready(function() {
           offset_top: 120
         });
 
-        //навигация по якорям в новости
+        //навигация по якорям
         $("#article-nav").ddscrollSpy({
           scrolltopoffset: -120
         });
@@ -304,12 +304,14 @@ $(document).ready(function() {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 160
+          //offset_top: 160
+          offset_top: 0
         });
 
-        //навигация по якорям в новости
+        //навигация по якорям
         $("#article-nav").ddscrollSpy({
-          scrolltopoffset: -160
+          //scrolltopoffset: -160
+          scrolltopoffset: -30
         });
       }, 100);
     }
@@ -342,12 +344,14 @@ $(window).resize( function(){
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 160
+          //offset_top: 160
+          offset_top: 0
         });
 
         //навигация по якорям в новости
         $("#article-nav").ddscrollSpy({
-          scrolltopoffset: -160
+          //scrolltopoffset: -160
+          scrolltopoffset: -30
         });
       }, 100);
     }
@@ -373,12 +377,14 @@ $(window).on("orientationchange", function(event) {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          offset_top: 160
+          //offset_top: 160
+          offset_top: 0
         });
 
         //навигация по якорям в новости
         $("#article-nav").ddscrollSpy({
-          scrolltopoffset: -160
+          //scrolltopoffset: -160
+          scrolltopoffset: -30
         });
       }, 100);
     }
