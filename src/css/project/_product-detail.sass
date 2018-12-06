@@ -26,86 +26,35 @@
         visibility: hidden
 
   &__thumbs
-    height: 100%
-    left: 1px
-    overflow-y: auto
-    overflow-x: hidden
-    padding-top: 40px
-    padding-bottom: 40px
-    position: absolute
-    top: 1px
-    width: 40px
-    z-index: 1
+    margin-top: 10px
+    padding-left: 40px
+    padding-right: 40px
 
-    @media(min-width: 768px)
-      width: 60px
+    .slick-prev,
+    .slick-next
+      background-color: #fff
+      width: 30px
 
-    @media(min-width: 1200px)
-      width: 80px
+      &::before
+        color: #b4b4b4 !important
+        font: 900 24px/1 'magictoolbox-thin' !important
 
-    //@media(min-width: 1400px)
-      width: 100px
+    .slick-prev
+      left: 0
 
-    //@media(min-width: 1600px)
-      width: 120px
+      &::before
+        content: "\a002"
 
-    &.slick-vertical
-      .slick-prev,
-      .slick-next
-        background-color: #fff
-        height: 40px
-        left: 50%
-        transform: translate(-50%, 0)
-        width: 40px
+    .slick-next
+      right: 0
 
-        @media(min-width: 768px)
-          width: 60px
-
-        @media(min-width: 1200px)
-          width: 80px
-
-        //@media(min-width: 1400px)
-          width: 100px
-
-        //@media(min-width: 1600px)
-          width: 120px
-
-        &::before
-          color: #b4b4b4 !important
-          font: 900 24px/1 'magictoolbox-thin' !important
-
-      .slick-prev
-        top: 0
-
-        &::before
-          content: "\a005"
-
-      .slick-next
-        top: 241px
-
-        @media(min-width: 400px)
-          top: 321px
-
-        @media(min-width: 768px)
-          top: 461px
-
-        @media(min-width: 960px)
-          top: 341px
-
-        @media(min-width: 1200px)
-          top: 354px
-
-        //@media(min-width: 1400px)
-          top: 434px
-
-        //@media(min-width: 1600px)
-          top: 512px
-
-        &::before
-          content: "\a004"
+      &::before
+        content: "\a003"
 
   &__thumb
     display: block
+    margin-left: auto
+    margin-right: auto
     padding: 0 1px
     transition: all 0.3s
     width: 40px
@@ -116,18 +65,12 @@
     @media(min-width: 1200px)
       width: 80px
 
-    //@media(min-width: 1400px)
-      width: 100px
-
-    //@media(min-width: 1600px)
-      width: 120px
-
     &.mz-thumb-selected
       img
         border-color: #343835
 
     img
-      border: 1px solid transparent
+      border: 1px solid #f3f3f3
 
   &__hint
     align-items: center
@@ -183,9 +126,6 @@
     font-size: 28px
     font-weight: 400
     margin-bottom: 6px
-
-    //@media(min-width: 960px)
-      font-size: 32px
 
   &__materials
     color: #b8b8b8
@@ -253,9 +193,6 @@
     @media(min-width: 480px)
       display: flex
 
-    //@media(min-width: 960px) and (max-width: 1100px)
-      display: block
-
     .button
       display: block
       margin-bottom: 10px
@@ -271,13 +208,6 @@
         margin-bottom: 0
         margin-right: 10px
         width: calc(50% - 10px)
-
-      //@media(min-width: 960px) and (max-width: 1199px)
-        display: block
-        font-size: 12px
-        margin-bottom: 10px
-        max-width: 200px
-        width: 100%
 
       @media(min-width: 960px)
         align-items: center
