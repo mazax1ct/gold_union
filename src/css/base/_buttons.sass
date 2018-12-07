@@ -1,6 +1,6 @@
 .button
   background-color: #fff
-  border: 1px solid #343835
+  border: 1px solid #000
   color: #343835
   cursor: pointer
   display: inline-block
@@ -17,13 +17,19 @@
   transition: color 0.3s, background-color 0.3s
   vertical-align: middle
 
+  &:hover,
+  &:active
+    background-color: #000
+    border-color: #000
+    color: #fff
+
   &--dark
-    background-color: #343835
+    background-color: #000
     color: #fff
 
     &:hover
-      background-color: #4a4a4a
-      border-color: #4a4a4a
+      background-color: #343835
+      border-color: #343835
 
   &--gold
     background-color: #d09b2b
@@ -35,12 +41,6 @@
       background-color: #d5a541
       border: 1px solid #d5a541
       color: #fff
-
-  &:hover,
-  &:active
-    background-color: #4a4a4a
-    border-color: #4a4a4a
-    color: #fff
 
   &:focus
     outline: 1px dotted #000
