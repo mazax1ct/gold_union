@@ -7,27 +7,33 @@
     flex-direction: row-reverse
     flex-wrap: wrap
     position: relative
-    padding-top: 144px
+    padding-top: 120px
     z-index: 2
+
+  &__column-right
+    margin-bottom: 60px
+
+    @media(min-width: 960px)
+      margin-top: -60px
+      margin-bottom: 0
+      width: 41.6666%
+
+  &__column-left
+    @media(min-width: 960px)
+      margin-right: 8.33333%
+      width: 50%
+
+  &__item
+    margin-bottom: 60px
+
+    &:last-child
+      margin-bottom: 0
 
 .collection-banner
   display: block
-  margin-bottom: 90px
   text-decoration: none
 
   &--right
-    &:first-child
-      @media(min-width: 960px)
-        margin-top: -96px
-
-      .collection-banner__image
-        @media(min-width: 960px)
-          padding-bottom: 100%
-
-    @media(min-width: 960px)
-      margin-top: -192px
-      width: 41.6666%
-
     .collection-banner__image
       @media(min-width: 960px)
         padding-bottom: 140%
@@ -37,14 +43,14 @@
         left: auto
         right: 0
 
+  &--square
+    .collection-banner__image
+      @media(min-width: 960px)
+        padding-bottom: 100%
+
   &--left
     display: flex
     flex-direction: column
-
-    @media(min-width: 960px)
-      margin-right: 8.33333%
-      margin-bottom: 96px
-      width: 50%
 
     .collection-banner__image-block
       @media(min-width: 960px)

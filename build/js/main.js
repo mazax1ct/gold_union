@@ -158,25 +158,6 @@ $(document).ready(function() {
       dots: false,
       prevArrow: '<button type="button" class="slick-prev" title="Назад"></button>',
       nextArrow: '<button type="button" class="slick-next" title="Вперед"></button>',
-      /*responsive: [{
-          breakpoint: 399,
-          settings: {
-            slidesToShow: 7
-          }
-        },
-        {
-          breakpoint: 959,
-          settings: {
-            slidesToShow: 5
-          }
-        },
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 4
-          }
-        }
-      ]*/
     });
   }
 
@@ -295,13 +276,11 @@ $(document).ready(function() {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          //offset_top: 160
           offset_top: 0
         });
 
         //навигация по якорям
         $("#article-nav").ddscrollSpy({
-          //scrolltopoffset: -160
           scrolltopoffset: -30
         });
       }, 100);
@@ -335,13 +314,11 @@ $(window).resize(function() {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          //offset_top: 160
           offset_top: 0
         });
 
         //навигация по якорям в новости
         $("#article-nav").ddscrollSpy({
-          //scrolltopoffset: -160
           scrolltopoffset: -30
         });
       }, 100);
@@ -368,13 +345,11 @@ $(window).on("orientationchange", function(event) {
       $(".js-sticky-block").trigger("sticky_kit:detach");
       setTimeout(function() {
         $(".js-sticky-block").stick_in_parent({
-          //offset_top: 160
           offset_top: 0
         });
 
         //навигация по якорям в новости
         $("#article-nav").ddscrollSpy({
-          //scrolltopoffset: -160
           scrolltopoffset: -30
         });
       }, 100);
