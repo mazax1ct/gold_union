@@ -175,6 +175,17 @@
       @media(min-width: 960px)
         margin-bottom: 0
 
+    a.checkbox-label,
+    span.checkbox-label
+      padding-left: 0
+
+    .is-current
+      color: #d5a541
+      cursor: default
+
+      .checkbox-text
+        cursor: default
+
   &__sort-item
     margin-bottom: 10px
 
@@ -193,7 +204,8 @@
       color: #c8962c
 
     &.is-active
-      text-decoration: underline
+      cursor: default
+      color: #d5a541
 
   &__buttons
     display: flex
