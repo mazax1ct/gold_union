@@ -32,7 +32,8 @@
 
     &.is-open
       @media(max-width: 959px)
-        display: block
+        display: flex
+        flex-direction: column
 
   &__dropdown-button-block
     display: none
@@ -54,6 +55,8 @@
       margin-right: 30px
 
     &--sort
+      order: 3
+
       @media(min-width: 960px)
         margin-left: auto
         margin-right: 0
@@ -67,6 +70,12 @@
 
       .filter__dropdown-inner
         display: block
+
+  &__form
+    flex-grow: 1
+
+    @media(min-width: 960px)
+      display: flex
 
   &__title
     margin-bottom: 0
@@ -211,6 +220,7 @@
     display: flex
     justify-content: space-between
     margin-top: 15px
+    order: 4
 
     @media(min-width: 960px)
       display: none
@@ -245,6 +255,7 @@
       display: flex
       flex-wrap: wrap
       margin-top: 20px
+      order: 4
       width: 100%
 
   &__checked,
