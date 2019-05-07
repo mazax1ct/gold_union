@@ -6,6 +6,7 @@ $(document).ready(function() {
   $(".js-search-opener").click(function() {
     $(".search-popup").toggleClass("is-open");
     $("body").toggleClass("overflow");
+    $(".search-bar__input").focus();
     return false;
   });
 

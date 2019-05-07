@@ -405,13 +405,13 @@
               <span class="product-detail__price product-detail__price--new">180 000 Р</span>-->
               <span class="product-detail__price">310 000 <span class="b-rub">Р</span></span>
             </p>
-            <!--<div class="product-detail__sizes">
+            <div class="product-detail__sizes">
               <p class="product-detail__sizes-title">Размер:</p>
               <a class="product-detail__size is-active" href="#">17</a>
               <a class="product-detail__size" href="#">18</a>
               <a class="product-detail__size" href="#">19</a>
-              <a class="product-detail__sizes-info" href="#">Другие размеры</a>
-            </div>-->
+              <a class="product-detail__sizes-info" href="#sizes" data-fancybox='form-popup'>Размерная сетка</a>
+            </div>
             <div class="product-detail__buttons">
               <a class="button button--dark" href="#buy" data-fancybox='form-popup'>Купить</a>
               <a class="button" href="#gift" data-fancybox='form-popup'>Хотите в подарок?</a>
@@ -441,7 +441,7 @@
             </div>
             <div class="product-detail__accordions">
               <div class="accordion">
-                <p class="js-accordion-opener accordion__title">Описание</p>
+                <p class="js-accordion-opener accordion__title" tabindex="0">Описание</p>
                 <div class="accordion__text">
                   <p>Кольцо Palmiero из белого золота с белыми и зелеными бриллиантами</p>
                   <!--<table>
@@ -465,7 +465,7 @@
                 </div>
               </div>
               <div class="accordion">
-                <p class="js-accordion-opener accordion__title">Доставка и оплата</p>
+                <p class="js-accordion-opener accordion__title" tabindex="0">Доставка и оплата</p>
                 <div class="accordion__text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, cum, omnis! Eveniet reprehenderit nostrum similique sapiente alias omnis ut non, expedita cumque in sed voluptas ullam enim. Aliquam, cupiditate hic!</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione tempore ipsam cupiditate nemo, atque eum tempora et doloremque labore. Voluptatum doloribus eligendi sequi aspernatur consequuntur, suscipit delectus
@@ -473,7 +473,7 @@
                 </div>
               </div>
               <div class="accordion">
-                <p class="js-accordion-opener accordion__title">Гарантия</p>
+                <p class="js-accordion-opener accordion__title" tabindex="0">Гарантия</p>
                 <div class="accordion__text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, cum, omnis! Eveniet reprehenderit nostrum similique sapiente alias omnis ut non, expedita cumque in sed voluptas ullam enim. Aliquam, cupiditate hic!</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione tempore ipsam cupiditate nemo, atque eum tempora et doloremque labore. Voluptatum doloribus eligendi sequi aspernatur consequuntur, suscipit delectus
@@ -481,7 +481,7 @@
                 </div>
               </div>
               <div class="accordion">
-                <p class="js-accordion-opener accordion__title">Дополнительная информация</p>
+                <p class="js-accordion-opener accordion__title" tabindex="0">Дополнительная информация</p>
                 <div class="accordion__text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, cum, omnis! Eveniet reprehenderit nostrum similique sapiente alias omnis ut non, expedita cumque in sed voluptas ullam enim. Aliquam, cupiditate hic!</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione tempore ipsam cupiditate nemo, atque eum tempora et doloremque labore. Voluptatum doloribus eligendi sequi aspernatur consequuntur, suscipit delectus
@@ -682,6 +682,173 @@
     </form>
   </div>
 
+  <div id="sizes" class="popup popup--small">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" /></svg></button>
+    <p class="popup__title">Размерная сетка:</p>
+    <table>
+      <tr>
+        <th>Российский размер</th>
+        <th>Европейский размер</th>
+      </tr>
+      <tr>
+        <td>15.04</td>
+        <td>47.1</td>
+      </tr>
+      <tr>
+        <td>15.27</td>
+        <td>47.8</td>
+      </tr>
+      <tr>
+        <td>15.40</td>
+        <td>48.1</td>
+      </tr>
+      <tr>
+        <td>15.53</td>
+        <td>48.4</td>
+      </tr>
+      <tr>
+        <td>15.70</td>
+        <td>49.0</td>
+      </tr>
+      <tr>
+        <td>15.80</td>
+        <td>49.3</td>
+      </tr>
+      <tr>
+        <td>15.90</td>
+        <td>49.6</td>
+      </tr>
+      <tr>
+        <td>16.0</td>
+        <td>50.0</td>
+      </tr>
+      <tr>
+        <td>16.10</td>
+        <td>50.3</td>
+      </tr>
+      <tr>
+        <td>16.30</td>
+        <td>50.9</td>
+      </tr>
+      <tr>
+        <td>16.41</td>
+        <td>51.3</td>
+      </tr>
+      <tr>
+        <td>16.51</td>
+        <td>51.5</td>
+      </tr>
+      <tr>
+        <td>16.71</td>
+        <td>52.2</td>
+      </tr>
+      <tr>
+        <td>16.92</td>
+        <td>52.8</td>
+      </tr>
+      <tr>
+        <td>17.13</td>
+        <td>53.4</td>
+      </tr>
+      <tr>
+        <td>17.35</td>
+        <td>54.0</td>
+      </tr>
+      <tr>
+        <td>17.45</td>
+        <td>54.7</td>
+      </tr>
+      <tr>
+        <td>17.75</td>
+        <td>55.3</td>
+      </tr>
+      <tr>
+        <td>17.97</td>
+        <td>55.9</td>
+      </tr>
+      <tr>
+        <td>18.19</td>
+        <td>56.6</td>
+      </tr>
+      <tr>
+        <td>18.35</td>
+        <td>57.2</td>
+      </tr>
+      <tr>
+        <td>18.53</td>
+        <td>57.8</td>
+      </tr>
+      <tr>
+        <td>18.61</td>
+        <td>58.4</td>
+      </tr>
+      <tr>
+        <td>18.80</td>
+        <td>59.0</td>
+      </tr>
+      <tr>
+        <td>18.89</td>
+        <td>59.1</td>
+      </tr>
+      <tr>
+        <td>19.10</td>
+        <td>59.4</td>
+      </tr>
+      <tr>
+        <td>19.22</td>
+        <td>59.7</td>
+      </tr>
+      <tr>
+        <td>19.31</td>
+        <td>60.0</td>
+      </tr>
+      <tr>
+        <td>19.41</td>
+        <td>60.3</td>
+      </tr>
+      <tr>
+        <td>19.51</td>
+        <td>60.6</td>
+      </tr>
+      <tr>
+        <td>19.62</td>
+        <td>60.9</td>
+      </tr>
+      <tr>
+        <td>19.84</td>
+        <td>61.6</td>
+      </tr>
+      <tr>
+        <td>20.02</td>
+        <td>62.2</td>
+      </tr>
+      <tr>
+        <td>20.20</td>
+        <td>62.8</td>
+      </tr>
+      <tr>
+        <td>20.7</td>
+        <td>64.1</td>
+      </tr>
+      <tr>
+        <td>21.1</td>
+        <td>65.3</td>
+      </tr>
+      <tr>
+        <td>21.5</td>
+        <td>66.6</td>
+      </tr>
+      <tr>
+        <td>21.9</td>
+        <td>67.9</td>
+      </tr>
+      <tr>
+        <td>22.3</td>
+        <td>69.1</td>
+      </tr>
+    </table>
+  </div>
   <div id="gift" class="popup">
     <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
     <p class="popup__title">Хотите такой подарок?</p>
@@ -792,24 +959,25 @@
     </form>
   </div>
   <div id="buy" class="popup popup--small">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" /></svg></button>
     <p class="popup__title">Выберите цвет:</p>
     <form class="popup__form form" action="/">
       <div class="popup__cols">
         <div class="popup__col">
           <div class="colors">
-            <label class="color">
-              <input class="color__radio" type="radio" name="color" value="1">
+            <label class="color" for="color_1">
+              <input id="color_1" class="color__radio" type="radio" name="color" value="1">
               <span class="color__image"><img src="images/content/img_44.jpg" alt="Коричневый"></span>
               <span class="color__title">Коричневый</span>
             </label>
-            <label class="color">
-              <input class="color__radio" type="radio" name="color" value="2">
+            <label class="color" for="color_2">
+              <input id="color_2" class="color__radio" type="radio" name="color" value="2">
               <span class="color__image"><img src="images/content/img_44.jpg" alt="Красный"></span>
               <span class="color__title">Красный</span>
             </label>
-            <label class="color">
-              <input class="color__radio" type="radio" name="color" value="3">
+            <label class="color" for="color_3">
+              <input id="color_3" class="color__radio" type="radio" name="color" value="3">
               <span class="color__image"><img src="images/content/img_44.jpg" alt="Розовый"></span>
               <span class="color__title">Розовый</span>
             </label>
@@ -817,7 +985,7 @@
         </div>
       </div>
       <div class="popup__button-block">
-        <span class="button">ВЫБРАТЬ</span>
+        <span class="button" tabindex="0">ВЫБРАТЬ</span>
       </div>
     </form>
   </div>

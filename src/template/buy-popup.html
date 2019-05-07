@@ -1,22 +1,23 @@
 <div id="buy" class="popup popup--small">
-  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close"/></svg></button>
+  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
+      <use xlink:href="#close" /></svg></button>
   <p class="popup__title">Выберите цвет:</p>
   <form class="popup__form form" action="/">
     <div class="popup__cols">
       <div class="popup__col">
         <div class="colors">
-          <label class="color">
-            <input class="color__radio" type="radio" name="color" value="1">
+          <label class="color" for="color_1">
+            <input id="color_1" class="color__radio" type="radio" name="color" value="1">
             <span class="color__image"><img src="images/content/img_44.jpg" alt="Коричневый"></span>
             <span class="color__title">Коричневый</span>
           </label>
-          <label class="color">
-            <input class="color__radio" type="radio" name="color" value="2">
+          <label class="color" for="color_2">
+            <input id="color_2" class="color__radio" type="radio" name="color" value="2">
             <span class="color__image"><img src="images/content/img_44.jpg" alt="Красный"></span>
             <span class="color__title">Красный</span>
           </label>
-          <label class="color">
-            <input class="color__radio" type="radio" name="color" value="3">
+          <label class="color" for="color_3">
+            <input id="color_3" class="color__radio" type="radio" name="color" value="3">
             <span class="color__image"><img src="images/content/img_44.jpg" alt="Розовый"></span>
             <span class="color__title">Розовый</span>
           </label>
@@ -24,7 +25,7 @@
       </div>
     </div>
     <div class="popup__button-block">
-      <span class="button">ВЫБРАТЬ</span>
+      <span class="button" tabindex="0">ВЫБРАТЬ</span>
     </div>
   </form>
 </div>

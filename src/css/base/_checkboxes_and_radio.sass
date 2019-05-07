@@ -24,7 +24,16 @@
 
   input[type="checkbox"],
   input[type="radio"]
-    display: none
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:focus
+      & + .checkbox-icon,
+      & + .radio-icon
+        outline: 1px dotted #000
 
 .checkbox-icon,
 .radio-icon

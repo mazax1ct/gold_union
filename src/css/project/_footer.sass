@@ -75,9 +75,10 @@
   margin-right: 4px
   width: 40px
 
-  &:hover
+  &:hover,
+  &:focus
     .social-link__icon
-      fill: #f3f3f3
+      opacity: 0.7
 
   &:active
     .social-link__icon
@@ -85,7 +86,7 @@
 
   &__icon
     fill: #b8b8b8
-    transition: fill 0.3s
+    transition: opacity 0.3s
 
     &--vk
       height: 26px

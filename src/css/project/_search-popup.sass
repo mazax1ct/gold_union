@@ -28,12 +28,17 @@
     right: 12px
     top: 12px
     text-align: center
+    transition: opacity 0.3s
     width: 40px
     z-index: 1
 
     @media(min-width: 768px)
       height: 48px
       width: 48px
+
+    &:hover,
+    &:focus
+      opacity: 0.7
 
   &__close-icon
     fill: #333736

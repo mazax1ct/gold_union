@@ -84,10 +84,12 @@
     clip: rect(0 0 0 0)
     width: 1px
 
-    &:checked + .color__image
+    &:checked + .color__image,
+    &:focus + .color__image
       border-color: #343835
 
-    &:checked ~ .color__title
+    &:checked ~ .color__title,
+    &:focus ~ .color__title
       font-weight: 700
 
   &__image
