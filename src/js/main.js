@@ -208,6 +208,7 @@ $(document).ready(function() {
   //слайдер изображений в галерее новости
   if ($(".js-gallery-slider").length) {
     $('.js-gallery-slider').slick({
+      adaptiveHeight: true,
       mobileFirst: true,
       infinite: false,
       slidesToShow: 1,
