@@ -41,15 +41,11 @@ $(document).ready(function() {
     $('.js-dropdown').hover(
       function() {
         var uid = $(this).attr('id');
-        eval('tmIn' + uid +
-          ' = setTimeout(function(){ $("#"+uid+" > .sub-menu").slideDown(250); }, 500);');
-        eval('if (typeof tmOut' + uid + ' !== "undefined") clearTimeout(tmOut' + uid + ');');
+        $("#" + uid + " > .sub-menu").delay(500).slideDown(250);
       },
       function() {
         var uid = $(this).attr('id');
-        eval('clearTimeout(tmIn' + uid + ');');
-        eval('tmOut' + uid +
-          ' = setTimeout(function(){ $("#"+uid+" > .sub-menu").slideUp(250); }, 500);');
+        $("#" + uid + " > .sub-menu").stop(true,true).delay(500).slideUp(250);
       }
     );
   }
