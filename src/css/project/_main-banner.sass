@@ -20,11 +20,17 @@
       fill: #b8b8b8
 
   &__image
+    display: flex
+    overflow: hidden
     position: relative
 
     @media(min-width: 960px)
       width: 50%
       z-index: 1
+
+    & > div
+      min-width: 100%
+      width: 100%
 
   &__image-caption
     font-size: 12px

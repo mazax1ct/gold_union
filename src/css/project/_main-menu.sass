@@ -48,16 +48,19 @@
       padding-bottom: 0
 
   &__list-item
+    @media(min-width: 1200px)
+      flex-grow: 1
+
     &--mobile
       @media(min-width: 1200px)
         display: none
 
     &--desktop
-      .main-menu__link
+      //.main-menu__link
         @media(min-width: 1200px)
           margin-left: -24px
 
-    &:last-child
+    //&:last-child
       .main-menu__link
         @media(min-width: 1200px)
           margin-right: -24px
@@ -82,6 +85,7 @@
       display: flex
       font-size: 12px
       font-weight: 500
+      justify-content: center
       line-height: 19px
       min-height: 38px
       padding-left: 24px

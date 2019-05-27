@@ -50,6 +50,20 @@ $(document).ready(function() {
     );
   }
 
+  //слайдер картинок в главном баннере
+  if ($('.js-main-banner').length) {
+    $('.js-main-banner').slick({
+      autoplay: true,
+      speed: 1000,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      arrows: false,
+      dots: false,
+      fade: true
+    });
+  }
+
   //слайдер новостей
   if ($('.js-news-slider').length) {
     $('.js-news-slider').slick({
