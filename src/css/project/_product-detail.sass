@@ -227,7 +227,19 @@
     text-transform: uppercase
 
 .shop
+  display: block
   margin-bottom: 20px
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: #343835
+
+    .shop__request-link
+      color: #343835
+
+    .shop__request-link-icon
+      fill: #343835
 
   &:last-child
     margin-bottom: 0
@@ -238,6 +250,7 @@
     justify-content: space-between
 
   &__title-block
+    display: block
     position: relative
     padding-left: 38px
 
@@ -256,11 +269,13 @@
       top: 6px
 
   &__title
+    display: block
     font-family: "Constantia", serif
     font-size: 17px
     margin-bottom: 0
 
   &__address
+    display: block
     font-size: 15px
 
   &__request-link
@@ -279,11 +294,6 @@
     text-transform: uppercase
     text-decoration: none
     width: 170px
-
-    &:hover
-      color: #343835
-      .shop__request-link-icon
-        fill: #343835
 
     @media(max-width: 479px)
       margin-left: 38px

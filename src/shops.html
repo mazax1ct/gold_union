@@ -32,7 +32,8 @@
           <div class="shop-item">
             <img class="shop-item__image" src="images/content/img_51.jpg" alt="">
             <div class="shop-item__description">
-              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Monza</h3>"><svg class="shop-item__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>Бутик Monza</p>
+              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Monza</h3>"><svg class="shop-item__address-icon" aria-hidden="true">
+                  <use xlink:href="#pin" /></svg>Бутик Monza</p>
               <p class="shop-item__subtitle">Телефон</p>
               <p class="shop-item__data"><a href="tel:+78123323262">+7 (812) 332 32 62</a></p>
               <p class="shop-item__subtitle">e-mail</p>
@@ -46,7 +47,8 @@
           <div class="shop-item">
             <img class="shop-item__image" src="images/content/img_52.jpg" alt="">
             <div class="shop-item__description">
-              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Korloff</h3>"><svg class="shop-item__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>Бутик Korloff</p>
+              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Korloff</h3>"><svg class="shop-item__address-icon" aria-hidden="true">
+                  <use xlink:href="#pin" /></svg>Бутик Korloff</p>
               <p class="shop-item__subtitle">Телефон</p>
               <p class="shop-item__data"><a href="tel:+78125755527">+7 (812) 575 55 27</a></p>
               <p class="shop-item__subtitle">e-mail</p>
@@ -60,7 +62,8 @@
           <div class="shop-item">
             <img class="shop-item__image" src="images/content/img_53.jpg" alt="">
             <div class="shop-item__description">
-              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Gold Union</h3>"><svg class="shop-item__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>Бутик Gold Union</p>
+              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Gold Union</h3>"><svg class="shop-item__address-icon" aria-hidden="true">
+                  <use xlink:href="#pin" /></svg>Бутик Gold Union</p>
               <p class="shop-item__subtitle">Телефон</p>
               <p class="shop-item__data"><a href="tel:+78126002443">+7 (812) 600 24 43</a></p>
               <p class="shop-item__subtitle">e-mail</p>
@@ -74,7 +77,8 @@
           <div class="shop-item">
             <img class="shop-item__image" src="images/content/img_54.jpg" alt="">
             <div class="shop-item__description">
-              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Piu Bello</h3>"><svg class="shop-item__address-icon" aria-hidden="true"><use xlink:href="#pin"/></svg>Бутик Piu Bello</p>
+              <p class="js-map-anchor shop-item__title" data-lat="59.980000" data-lng="30.328777" data-popup="<h3>Бутик Piu Bello</h3>"><svg class="shop-item__address-icon" aria-hidden="true">
+                  <use xlink:href="#pin" /></svg>Бутик Piu Bello</p>
               <p class="shop-item__subtitle">Телефон</p>
               <p class="shop-item__data"><a href="tel:+78123842055">+7 (812) 384-20-55</a></p>
               <p class="shop-item__subtitle">e-mail</p>
@@ -98,41 +102,36 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
   <script>
     function initContactsMap() {
-      var pointLatLng = { lat: 59.990094, lng: 30.318777 };
+      var pointLatLng = {
+        lat: 59.990094,
+        lng: 30.318777
+      };
 
-      var stylesArray = [
-        {
+      var stylesArray = [{
           "featureType": "administrative",
           "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#444444"
-            }
-          ]
+          "stylers": [{
+            "color": "#444444"
+          }]
         },
         {
           "featureType": "landscape",
           "elementType": "all",
-          "stylers": [
-            {
-              "color": "#f2f2f2"
-            }
-          ]
+          "stylers": [{
+            "color": "#f2f2f2"
+          }]
         },
         {
           "featureType": "poi",
           "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
+          "stylers": [{
+            "visibility": "off"
+          }]
         },
         {
           "featureType": "road",
           "elementType": "all",
-          "stylers": [
-            {
+          "stylers": [{
               "saturation": -100
             },
             {
@@ -143,35 +142,28 @@
         {
           "featureType": "road.highway",
           "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "simplified"
-            }
-          ]
+          "stylers": [{
+            "visibility": "simplified"
+          }]
         },
         {
           "featureType": "road.arterial",
           "elementType": "labels.icon",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
+          "stylers": [{
+            "visibility": "off"
+          }]
         },
         {
           "featureType": "transit",
           "elementType": "all",
-          "stylers": [
-            {
-              "visibility": "off"
-            }
-          ]
+          "stylers": [{
+            "visibility": "off"
+          }]
         },
         {
           "featureType": "water",
           "elementType": "all",
-          "stylers": [
-            {
+          "stylers": [{
               "color": "#dedee4"
             },
             {
@@ -181,12 +173,12 @@
         }
       ];
 
-      var popupContent = '<h3>Бутик Monza</h3><p>Телефон: +7 (812) 332 32 62<br><br>E-mail: monza@goldunion.spb.ru<br><br>Адрес: Санкт-Петербург, ул. Михайловская, 4<br><br>Время работы: ежедневно с 11.00 до 21.00</p>';
+      var bounds = new google.maps.LatLngBounds();
 
       var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 16,
         center: pointLatLng,
-        scrollwheel: false,
+        scrollwheel: true,
         zoomControl: false,
         scaleControl: false,
         mapTypeControl: false,
@@ -203,30 +195,61 @@
         scale: 1
       };
 
-      var marker = new google.maps.Marker({
-        position: pointLatLng,
-        map: map,
-        draggable: false,
-        icon: icon
-      });
+      var locations = [
+        ['<h3>Бутик Gold Union</h3><p>Телефон: +7 (812) 600 24 43<br><br>E-mail: gu@goldunion.spb.ru<br><br>Адрес: Санкт-Петербург,<br> Невский пр., 137<br><br>Время работы: Ежедневно с 11.00 до 21.00</p>', 59.926812, 30.375552, 380],
+        ['<h3>Бутик Monza</h3><p>Телефон: +7 (812) 332 32 62<br><br>E-mail: monza@goldunion.spb.ru<br><br>Адрес: Санкт-Петербург,<br> ул. Михайловская, 4<br><br>Время работы: Ежедневно с 11.00 до 21.00</p>', 59.935428, 30.331112, 378],
+        ['<h3>Бутик Korloff</h3><p>Телефон: +7 (812) 575 55 27<br><br>E-mail: korloff@goldunion.spb.ru<br><br>Адрес: Санкт-Петербург,<br> ул. Михайловская, 4<br><br>Время работы: Ежедневно с 11.00 до 21.00</p>', 59.935227, 30.331005, 379],
+        ['<h3>Бутик Piu Bello</h3><p>Телефон: +7 (812) 384-20-55<br><br>E-mail: piubello@goldunion.spb.ru<br><br>Адрес: Санкт-Петербург,<br> ТК «Невский Центр» Невский пр. 114-116 А<br><br>Время работы: Ежедневно с 10.00 до 22.00</p>', 59.932439,
+          30.359085, 381
+        ],
+      ];
 
-      infowindow = new google.maps.InfoWindow({
-        content: popupContent
-      });
+      var infowindow = new google.maps.InfoWindow();
 
-      marker.addListener('click', function() {
-          infowindow.open(map, marker);
+      var marker, i;
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map,
+          draggable: false,
+          icon: icon
+        });
+
+        bounds.extend(marker.position);
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+
+      map.fitBounds(bounds);
+
+      var listener = google.maps.event.addListener(map, "idle", function() {
+        if ($('body').width() < 768) {
+          map.setZoom(12);
+        } else {
+          map.setZoom(14);
+        }
+
+        google.maps.event.removeListener(listener);
       });
 
       //обновление данных карты по клику на название бутика
       $(".js-map-anchor").click(function() {
-        map.setCenter({lat: Number($(this).attr("data-lat")), lng: Number($(this).attr("data-lng"))});
-        marker.setPosition({lat: Number($(this).attr("data-lat")), lng: Number($(this).attr("data-lng"))});
-        infowindow.setContent($(this).attr("data-popup"));
+        map.setCenter({
+          lat: Number($(this).attr("data-lat")),
+          lng: Number($(this).attr("data-lng"))
+        });
+        //marker.setPosition({lat: Number($(this).attr("data-lat")), lng: Number($(this).attr("data-lng"))});
+        //infowindow.setContent($(this).attr("data-popup"));
         var headerHeight = $(".header").height();
         var mapOffsetTop = $(".map").offset().top - headerHeight;
         $('body, html').animate({
-            scrollTop: mapOffsetTop
+          scrollTop: mapOffsetTop
         }, 500);
       });
     }
