@@ -548,6 +548,25 @@
                 </div>
               </div>
               <div class="filter__section">
+                <p class="filter__title"><span class="js-filter-section-opener filter__section-opener" data-section="3"><svg class="filter__section-opener-icon" aria-hidden="true"><use xlink:href="#arrow_bottom"/></svg>Цена</span></p>
+                <div class="filter__dropdown" data-section="3">
+                  <div class="filter__dropdown-inner">
+                    <div class="filter__price-block">
+                      <div class="filter__price-slider">
+                        <input id="price_slider" type="text" value="" />
+                      </div>
+                      <div class="filter__price-controls">
+                        <input id="price_slider_input_from" class="input input--small" type="text" value="0" />
+                        <input id="price_slider_input_to" class="input input--small" type="text" value="0" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__dropdown-button-block">
+                    <button class="filter__button" type="button">ПРИМЕНИТЬ</button>
+                  </div>
+                </div>
+              </div>
+              <!--<div class="filter__section">
                 <p class="filter__title"><span class="js-filter-section-opener filter__section-opener" data-section="3"><svg class="filter__section-opener-icon" aria-hidden="true"><use xlink:href="#arrow_bottom"/></svg>Материал</span></p>
                 <div class="filter__dropdown" data-section="3">
                   <div class="filter__dropdown-inner">
@@ -583,7 +602,7 @@
                     <button class="filter__button" type="button">ПРИМЕНИТЬ</button>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <div class="filter__section">
                 <p class="filter__title"><span class="js-filter-section-opener filter__section-opener" data-section="4"><svg class="filter__section-opener-icon" aria-hidden="true"><use xlink:href="#arrow_bottom"/></svg>Камень</span></p>
                 <div class="filter__dropdown" data-section="4">
@@ -1131,6 +1150,75 @@
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var $range = $("#price_slider");
+      var $inputFrom = $("#price_slider_input_from");
+      var $inputTo = $("#price_slider_input_to");
+      var instance;
+      var min = 0;
+      var max = 1000000;
+      var from = 0;
+      var to = 0;
+
+      $range.ionRangeSlider({
+          skin: "round",
+          type: "double",
+          min: min,
+          max: max,
+          from: 200,
+          to: 1000000,
+          onStart: updateInputs,
+          onChange: updateInputs,
+          onFinish: updateInputs
+      });
+      instance = $range.data("ionRangeSlider");
+
+      function updateInputs (data) {
+          from = data.from;
+          to = data.to;
+
+          $inputFrom.prop("value", from);
+          $inputTo.prop("value", to);
+      }
+
+      $inputFrom.on("change", function () {
+          var val = $(this).prop("value");
+
+          // validate
+          if (val < min) {
+              val = min;
+          } else if (val > to) {
+              val = to;
+          }
+
+          instance.update({
+              from: val
+          });
+
+          $(this).prop("value", val);
+
+      });
+
+      $inputTo.on("change", function () {
+          var val = $(this).prop("value");
+
+          // validate
+          if (val < from) {
+              val = from;
+          } else if (val > max) {
+              val = max;
+          }
+
+          instance.update({
+              to: val
+          });
+
+          $(this).prop("value", val);
+      });
+    });
+  </script>
 </body>
 
 </html>
