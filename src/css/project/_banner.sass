@@ -1,4 +1,9 @@
 .banners
+  margin-bottom: 60px
+
+  @media(min-width: 1200px)
+    margin-bottom: 96px
+
   &__inner
     margin-bottom: 60px
 
@@ -28,6 +33,20 @@
     @media(min-width: 960px)
       margin-right: 8.33333%
       width: 50%
+
+  &__column-equal
+    margin-bottom: 60px
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      width: calc(50% - 24px)
+
+    @media(min-width: 1400px)
+      width: calc(50% - 48px)
+
+    &:last-child
+      @media(min-width: 960px)
+        margin-right: auto
 
   &__item
     margin-bottom: 60px

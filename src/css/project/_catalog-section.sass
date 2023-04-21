@@ -2,18 +2,26 @@
   overflow-x: hidden
 
 .catalog-section
-  align-items: flex-start
-  display: flex
-  flex-wrap: wrap
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 10px
   margin-bottom: 48px
 
+  @media(min-width: 540px)
+    grid-template-columns: 1fr 1fr
+
+  @media(min-width: 768px)
+    grid-template-columns: 1fr 1fr 1fr
+
   @media(min-width: 1200px)
-    margin-bottom: 96px
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 10px
+    margin-bottom: 60px
 
   &:last-child
     margin-bottom: 0
 
-  &__subgrid
+  //&__subgrid
     width: 100%
 
     @media(min-width: 480px)
@@ -25,41 +33,24 @@
       width: 50%
 
 .product
+  aspect-ratio: 1
   box-shadow: 0px 0px 1px 0px rgba(210,210,210,1)
   display: block
   position: relative
-  padding-bottom: 100%
   text-decoration: none
-  width: 100%
+  z-index: 0
 
   &:hover
     .product__inner
       opacity: 0.5
-
-  &--big
-    @media(min-width: 768px)
-      padding-bottom: 50%
-      width: 50%
-
-  &--small
-    @media(min-width: 480px)
-      padding-bottom: 50%
-      width: 50%
 
   &__inner
     display: flex
     flex-direction: column
     justify-content: flex-end
     height: 100%
-    left: 0
-    padding: 24px
-    position: absolute
-    top: 0
+    padding: 12px
     transition: opacity 0.3s
-    width: 100%
-
-    @media(min-width: 768px) and (max-width: 1199px)
-      padding: 12px
 
   &__image,
   &__text-block,
@@ -113,6 +104,43 @@
     &--old
       color: #343835
       text-decoration: line-through
+
+  &__materials
+    color: #343835
+    display: block
+    font-size: 11px
+    opacity: 0.8
+
+.fav-add
+  align-items: center
+  border: none
+  background-color: transparent
+  cursor: pointer
+  display: flex
+  height: 40px
+  justify-content: center
+  left: auto
+  padding: 0
+  position: absolute
+  right: 0
+  top: 0
+  width: 40px
+  z-index: 1
+
+  &:hover
+    svg
+      filter: drop-shadow(0 0 4px #d5a541)
+
+  svg
+    fill: none
+    height: 30px
+    stroke: #d5a541
+    width: 30px
+
+  &.added
+    svg
+      fill: #d5a541
+      stroke: none
 
 $i: 12
 @while $i > 0
