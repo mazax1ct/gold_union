@@ -68,7 +68,7 @@
     color: #b8b8b8
     font-size: 12px
     line-height: 24px
-    margin-bottom: 0
+    margin-bottom: 0 !important
     order: 3
     text-align: center
 
@@ -125,6 +125,9 @@
     top: auto
     transform: translateX(-50%)
     white-space: nowrap
+
+    @media(min-width: 768px)
+      bottom: -18px
 
     a
       color: #b8b8b8

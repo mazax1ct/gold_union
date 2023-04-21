@@ -7,6 +7,14 @@
     margin-bottom: 96px
     margin-top: 48px
 
+  &--reverse
+    flex-direction: row-reverse
+
+    .product-detail__images
+      @media(min-width: 960px)
+        padding-left: 4.1666%
+        padding-right: 0
+
   &__images
     margin-bottom: 24px
     position: relative
@@ -126,6 +134,15 @@
     font-size: 28px
     font-weight: 400
     margin-bottom: 6px
+
+  &__title_2
+    font-size: 36px
+    font-weight: 300
+    text-transform: uppercase
+
+  &__descr
+    p
+      margin-bottom: 0
 
   &__materials
     font-size: 15px
