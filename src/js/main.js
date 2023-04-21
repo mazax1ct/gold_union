@@ -1,3 +1,24 @@
+//отслеживание скролла для шапки
+var header = $('.header');
+
+var resize_scroll = function(e) {
+  var scrolled = $(window).scrollTop();
+
+  if (scrolled > 0) {
+		header.addClass('scrolled');
+	} else {
+		header.removeClass('scrolled');
+	}
+};
+
+$(document).ready(function() {
+  //запуск функции навешивания класса на шапку
+  resize_scroll();
+});
+
+//перезапуск функции навешивания класса на шапку при скролле и ресайзе
+$(window).on("scroll", resize_scroll).on("resize", resize_scroll);
+
 $(document).ready(function() {
   //убираем пометку о том что js выключен
   $('body').removeClass('no-js');

@@ -1,10 +1,10 @@
 .products-slider
-  padding-left: 1px
-  padding-right: 1px
-
   &__item
-    padding-top: 1px
-    padding-bottom: 1px
+    padding: 5px
+
+  &:not(.slick-initialized)
+    display: flex
+    overflow-x: auto
 
 .product2
   box-shadow: 0px 0px 1px 0px rgba(210,210,210,1)
@@ -13,6 +13,9 @@
   padding-bottom: 100%
   text-decoration: none
   width: 100%
+
+  &--vertical
+    padding-bottom: 150%
 
   &:hover
     .product2__inner
@@ -35,7 +38,8 @@
 
   &__image,
   &__title,
-  &__price
+  &__price,
+  &__brand
     display: block
 
   &__img
@@ -73,3 +77,6 @@
     text-overflow: ellipsis
     text-align: center
     white-space: nowrap
+
+  &__brand
+    text-align: center

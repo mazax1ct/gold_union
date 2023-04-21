@@ -8,34 +8,31 @@
   z-index: 100
 
   @media(min-width: 1200px)
-    position: relative
+    //position: relative
+
+  &.scrolled
+    @media(min-width: 1200px)
+      box-shadow: 0 0 3px 0 rgba(#000, 0.1)
 
   &__top
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1)
-    max-width: 100%
+    max-width: 1570px
     padding-top: 20px
     padding-bottom: 20px
-    padding-left: 16px
-    padding-right: 16px
+    padding-left: 12px
+    padding-right: 12px
     position: relative
     transition: padding 0.3s
     z-index: 2
 
     @media(min-width: 400px)
-      padding-left: 24px
-      padding-right: 24px
-
-    @media(min-width: 768px)
-      padding-top: 24px
-      padding-bottom: 24px
-      padding-left: 48px
-      padding-right: 48px
+      padding-left: 20px
+      padding-right: 20px
 
     @media(min-width: 1200px)
       box-shadow: none
-      max-width: 1120px
-      padding-top: 22px
-      padding-bottom: 22px
+      padding-top: 15px
+      padding-bottom: 15px
 
   &__top-inner
     display: flex
@@ -56,20 +53,23 @@
 
   &__cart-link
     @media(min-width: 480px)
-      margin-left: 20px
+      margin-left: 5px
 
     @media(min-width: 768px)
-      margin-left: 40px
+      margin-left: 24px
 
-    @media(min-width: 1200px)
-      margin-left: 28px
+    @media(min-width: 1400px)
+      margin-left: 36px
 
   &__personal-link
     color: #353535
     font-size: 14px
     font-weight: 500
     line-height: 27px
-    margin-left: 40px
+    margin-left: 24px
+
+    @media(min-width: 1400px)
+      margin-left: 36px
 
     &:hover
       text-decoration: none
@@ -161,13 +161,16 @@
   transition: all 0.3s
   width: 110px
 
-  @media(min-width: 400px)
+  @media(min-width: 480px)
     width: 166px
 
   @media(min-width: 768px)
     width: 200px
 
-  @media(min-width: 1200px)
+  @media(min-width: 1400px)
+    width: 240px
+
+  //@media(min-width: 1900px)
     width: 268px
 
 .cart-link
@@ -180,14 +183,21 @@
   text-decoration: none
   width: 35px
 
+  &:hover
+    color: #d5a541
+
+    .cart-link__icon
+      fill: #d5a541
+
   &__icon
     fill: #343835
-    height: 20px
+    height: 24px
     left: 50%
     position: absolute
     top: 50%
     transform: translate(-50%, -50%)
-    width: 20px
+    transition: fill 0.3s
+    width: 24px
 
   &__decimal
     color: #fff
@@ -197,6 +207,40 @@
     position: relative
     z-index: 1
 
+.favorite-link
+  align-items: center
+  color: #343835
+  display: flex
+  justify-content: center
+  height: 35px
+  position: relative
+  text-decoration: none
+  width: 35px
+
+  &:hover
+    color: #d5a541
+
+    .favorite-link__icon
+      stroke: #d5a541
+
+  &__icon
+    fill: none
+    height: 30px
+    left: 50%
+    position: absolute
+    stroke: #343835
+    top: 50%
+    transform: translate(-50%, -50%)
+    transition: stroke 0.3s
+    width: 30px
+
+  &__text
+    font-size: 10px
+    font-weight: 500
+    position: relative
+    padding-bottom: 2px
+    z-index: 1
+
 .search-link
   align-items: center
   display: flex
@@ -204,7 +248,14 @@
   height: 35px
   width: 35px
 
+  &:hover
+    color: #d5a541
+
+    .search-link__icon
+      fill: #d5a541
+
   &__icon
     fill: #343835
     height: 20px
+    transition: fill 0.3s
     width: 20px
